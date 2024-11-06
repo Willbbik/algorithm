@@ -7,8 +7,8 @@ const N = input.shift();
 let arr = input.shift().split(" ").map(Number);
 const studentsCount = input.shift();
 
-for(let i=0; i<studentsCount.length; i++) {
-    const [sex, num] = input[i].split(" ");
+for(let i=0; i<studentsCount; i++) {
+    const [sex, num] = input[i].split(" ").map(Number);
 
     if(sex == 1){
         manCalculate(arr, num)
@@ -17,7 +17,16 @@ for(let i=0; i<studentsCount.length; i++) {
     }
 }
 
-console.log(arr.join(" "))
+let output = '';
+arr.forEach((data, index) => {
+    output += data + ' ';
+
+    if ((index + 1) % 20 === 0) {
+        output += '\n';
+    }
+})
+
+console.log(output)
 
 function manCalculate(arr, num) {
     for(let i=1; i<=arr.length; i++) {
@@ -32,6 +41,7 @@ function girlCalculate(arr, num) {
     let isDone = false;
     let left = num-2;
     let right = num;
+    arr[num-1] = arr[num-1] == 1 ? 0 : 1;
 
     while(!isDone){
         if(left < 0 || right >= arr.length) {
@@ -39,14 +49,15 @@ function girlCalculate(arr, num) {
             break;
         }
 
-        if(arr[left] == arr[right]) {
-            arr[left] = arr[left] == 1 ? 0 : 1;
-            arr[right] = arr[right] == 1 ? 0 : 1;
+        if(arr[left] != arr[right]) {
+            isDone = true;
+            break;
         }
 
-        left --;
-        right ++;
-    }
+        arr[left] = arr[left] == 1 ? 0 : 1;
+        arr[right] = arr[right] == 1 ? 0 : 1;
 
-    arr[num-1] = arr[num-1] == 1 ? 0 : 1;
+        left--;
+        right++;
+    }
 }
