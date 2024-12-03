@@ -34,5 +34,3 @@ while Q:
 print(cnt)
             
     
-    
-
