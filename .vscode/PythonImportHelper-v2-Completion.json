@@ -72,6 +72,14 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
@@ -158,6 +166,42 @@
         "description": "백준.골드.10026",
         "peekOfCode": "result = \"\"\nfor i in range(N):\n    # originPicture.append(list(lines[i+1].strip()))\n    originPicture.append(list(input().strip()))\ndef bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[x][y] = True\n    while Q:\n        nowX, nowY = Q.popleft()",
         "detail": "백준.골드.10026",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "백준.골드.13549",
+        "description": "백준.골드.13549",
+        "peekOfCode": "def bfs(now, taret):\n    Q = deque()\n    Q.append(now)\n    graph[now] = 0\n    while Q:\n        current = Q.popleft()\n        if(current == taret):\n            return graph[current]\n        a = current * 2\n        b = current + 1",
+        "detail": "백준.골드.13549",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "백준.골드.13549",
+        "description": "백준.골드.13549",
+        "peekOfCode": "data = input().split(\" \")\nN, K = map(int, data)\nMAX = 200000\ngraph = [-1] * (MAX + 1)\ndef bfs(now, taret):\n    Q = deque()\n    Q.append(now)\n    graph[now] = 0\n    while Q:\n        current = Q.popleft()",
+        "detail": "백준.골드.13549",
+        "documentation": {}
+    },
+    {
+        "label": "MAX",
+        "kind": 5,
+        "importPath": "백준.골드.13549",
+        "description": "백준.골드.13549",
+        "peekOfCode": "MAX = 200000\ngraph = [-1] * (MAX + 1)\ndef bfs(now, taret):\n    Q = deque()\n    Q.append(now)\n    graph[now] = 0\n    while Q:\n        current = Q.popleft()\n        if(current == taret):\n            return graph[current]",
+        "detail": "백준.골드.13549",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "백준.골드.13549",
+        "description": "백준.골드.13549",
+        "peekOfCode": "graph = [-1] * (MAX + 1)\ndef bfs(now, taret):\n    Q = deque()\n    Q.append(now)\n    graph[now] = 0\n    while Q:\n        current = Q.popleft()\n        if(current == taret):\n            return graph[current]\n        a = current * 2",
+        "detail": "백준.골드.13549",
         "documentation": {}
     },
     {
