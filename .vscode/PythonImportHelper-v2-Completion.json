@@ -80,6 +80,14 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
@@ -166,6 +174,51 @@
         "description": "백준.골드.10026",
         "peekOfCode": "result = \"\"\nfor i in range(N):\n    # originPicture.append(list(lines[i+1].strip()))\n    originPicture.append(list(input().strip()))\ndef bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[x][y] = True\n    while Q:\n        nowX, nowY = Q.popleft()",
         "detail": "백준.골드.10026",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "백준.골드.1261",
+        "description": "백준.골드.1261",
+        "peekOfCode": "def bfs(x, y):\n    Q = deque()\n    Q.append((y, x))\n    dist[y][x] = graph[y][x]\n    while Q:\n        nowY, nowX = Q.popleft()\n        for i in range(4):\n            nextX = nowX + moveX[i] # 열\n            nextY = nowY + moveY[i] # 행\n            if(nextX >= M or nextX < 0 or nextY >= N or nextY < 0):",
+        "detail": "백준.골드.1261",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "백준.골드.1261",
+        "description": "백준.골드.1261",
+        "peekOfCode": "graph = []\ndist = [[-1] * M for _ in range(N)]\nmoveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nfor i in range(N):\n    # graph.append(list(map(int, lines[i+1].strip())))\n    graph.append(list(map(int, input().strip())))\ndef bfs(x, y):\n    Q = deque()\n    Q.append((y, x))",
+        "detail": "백준.골드.1261",
+        "documentation": {}
+    },
+    {
+        "label": "dist",
+        "kind": 5,
+        "importPath": "백준.골드.1261",
+        "description": "백준.골드.1261",
+        "peekOfCode": "dist = [[-1] * M for _ in range(N)]\nmoveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nfor i in range(N):\n    # graph.append(list(map(int, lines[i+1].strip())))\n    graph.append(list(map(int, input().strip())))\ndef bfs(x, y):\n    Q = deque()\n    Q.append((y, x))\n    dist[y][x] = graph[y][x]",
+        "detail": "백준.골드.1261",
+        "documentation": {}
+    },
+    {
+        "label": "moveX",
+        "kind": 5,
+        "importPath": "백준.골드.1261",
+        "description": "백준.골드.1261",
+        "peekOfCode": "moveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nfor i in range(N):\n    # graph.append(list(map(int, lines[i+1].strip())))\n    graph.append(list(map(int, input().strip())))\ndef bfs(x, y):\n    Q = deque()\n    Q.append((y, x))\n    dist[y][x] = graph[y][x]\n    while Q:",
+        "detail": "백준.골드.1261",
+        "documentation": {}
+    },
+    {
+        "label": "moveY",
+        "kind": 5,
+        "importPath": "백준.골드.1261",
+        "description": "백준.골드.1261",
+        "peekOfCode": "moveY = [0, -1, 0, 1]\nfor i in range(N):\n    # graph.append(list(map(int, lines[i+1].strip())))\n    graph.append(list(map(int, input().strip())))\ndef bfs(x, y):\n    Q = deque()\n    Q.append((y, x))\n    dist[y][x] = graph[y][x]\n    while Q:\n        nowY, nowX = Q.popleft()",
+        "detail": "백준.골드.1261",
         "documentation": {}
     },
     {
