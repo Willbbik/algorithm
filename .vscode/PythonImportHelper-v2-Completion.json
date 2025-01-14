@@ -96,11 +96,28 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
         "isExtraImport": true,
         "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
         "documentation": {}
     },
     {
@@ -263,6 +280,69 @@
         "description": "백준.골드.13549",
         "peekOfCode": "graph = [-1] * (MAX + 1)\ndef bfs(now, taret):\n    Q = deque()\n    Q.append(now)\n    graph[now] = 0\n    while Q:\n        current = Q.popleft()\n        if(current == taret):\n            return graph[current]\n        a = current * 2",
         "detail": "백준.골드.13549",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "백준.골드.16234",
+        "description": "백준.골드.16234",
+        "peekOfCode": "def bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[y][x] = True\n    union = []\n    union.append((x, y))\n    while Q:\n        nowX, nowY = Q.popleft()\n        for i in range(4):\n            nX = nowX + moveX[i]",
+        "detail": "백준.골드.16234",
+        "documentation": {}
+    },
+    {
+        "label": "moveX",
+        "kind": 5,
+        "importPath": "백준.골드.16234",
+        "description": "백준.골드.16234",
+        "peekOfCode": "moveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nstart = True\ntemp = []\ngraph = []\nday = 0\nfor i in range(N):\n    # arr = list(map(int, lines[i+1].split(\" \")))\n    arr = list(map(int, input().split(\" \")))\n    graph.append(arr)",
+        "detail": "백준.골드.16234",
+        "documentation": {}
+    },
+    {
+        "label": "moveY",
+        "kind": 5,
+        "importPath": "백준.골드.16234",
+        "description": "백준.골드.16234",
+        "peekOfCode": "moveY = [0, -1, 0, 1]\nstart = True\ntemp = []\ngraph = []\nday = 0\nfor i in range(N):\n    # arr = list(map(int, lines[i+1].split(\" \")))\n    arr = list(map(int, input().split(\" \")))\n    graph.append(arr)\ndef bfs(x, y):",
+        "detail": "백준.골드.16234",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "백준.골드.16234",
+        "description": "백준.골드.16234",
+        "peekOfCode": "start = True\ntemp = []\ngraph = []\nday = 0\nfor i in range(N):\n    # arr = list(map(int, lines[i+1].split(\" \")))\n    arr = list(map(int, input().split(\" \")))\n    graph.append(arr)\ndef bfs(x, y):\n    Q = deque()",
+        "detail": "백준.골드.16234",
+        "documentation": {}
+    },
+    {
+        "label": "temp",
+        "kind": 5,
+        "importPath": "백준.골드.16234",
+        "description": "백준.골드.16234",
+        "peekOfCode": "temp = []\ngraph = []\nday = 0\nfor i in range(N):\n    # arr = list(map(int, lines[i+1].split(\" \")))\n    arr = list(map(int, input().split(\" \")))\n    graph.append(arr)\ndef bfs(x, y):\n    Q = deque()\n    Q.append((x, y))",
+        "detail": "백준.골드.16234",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "백준.골드.16234",
+        "description": "백준.골드.16234",
+        "peekOfCode": "graph = []\nday = 0\nfor i in range(N):\n    # arr = list(map(int, lines[i+1].split(\" \")))\n    arr = list(map(int, input().split(\" \")))\n    graph.append(arr)\ndef bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[y][x] = True",
+        "detail": "백준.골드.16234",
+        "documentation": {}
+    },
+    {
+        "label": "day",
+        "kind": 5,
+        "importPath": "백준.골드.16234",
+        "description": "백준.골드.16234",
+        "peekOfCode": "day = 0\nfor i in range(N):\n    # arr = list(map(int, lines[i+1].split(\" \")))\n    arr = list(map(int, input().split(\" \")))\n    graph.append(arr)\ndef bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[y][x] = True\n    union = []",
+        "detail": "백준.골드.16234",
         "documentation": {}
     },
     {
