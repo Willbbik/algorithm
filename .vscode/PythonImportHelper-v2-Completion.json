@@ -112,20 +112,19 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
         "isExtraImport": true,
         "detail": "copy",
-        "documentation": {}
-    },
-    {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
         "documentation": {}
     },
     {
@@ -135,6 +134,15 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
         "documentation": {}
     },
     {
@@ -252,6 +260,33 @@
         "description": "백준.골드.1261",
         "peekOfCode": "moveY = [0, -1, 0, 1]\nfor i in range(N):\n    # graph.append(list(map(int, lines[i+1].strip())))\n    graph.append(list(map(int, input().strip())))\ndef bfs(x, y):\n    Q = deque()\n    Q.append((y, x))\n    dist[y][x] = graph[y][x]\n    while Q:\n        nowY, nowX = Q.popleft()",
         "detail": "백준.골드.1261",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.골드.13265",
+        "description": "백준.골드.13265",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\ndef bfs(node):\n    Q = deque()\n    Q.append(node)\n    colors[node] = 0\n    while Q:\n        a = Q.popleft()\n        for b in maps[a]:\n            # 연결",
+        "detail": "백준.골드.13265",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "백준.골드.13265",
+        "description": "백준.골드.13265",
+        "peekOfCode": "def bfs(node):\n    Q = deque()\n    Q.append(node)\n    colors[node] = 0\n    while Q:\n        a = Q.popleft()\n        for b in maps[a]:\n            # 연결\n            if(colors[b] == -1):\n                Q.append(b)",
+        "detail": "백준.골드.13265",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "백준.골드.13265",
+        "description": "백준.골드.13265",
+        "peekOfCode": "T = int(input())\n# 테스트 케이스 개수만큼 반복\nfor _ in range(T):\n    n, m = map(int, input().split(\" \"))\n    result = []\n    # 인접 리스트\n    maps = [[] for _ in range(n + 1)]\n    colors = [-1] * (n + 1)\n    # 동그라미 연결\n    for _ in range(m):",
+        "detail": "백준.골드.13265",
         "documentation": {}
     },
     {
