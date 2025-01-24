@@ -1,4 +1,5 @@
 from collections import deque
+import sys
 
 # with open("./data.txt", "r") as file:
 #     def input():
@@ -29,17 +30,17 @@ def bfs(value):
     
     return True
 
-K = int(input())
+K = int(sys.stdin.readline())
 
 for _ in range(K):
-    V, E = map(int, input().split(" "))
+    V, E = map(int, sys.stdin.readline().split(" "))
 
     maps = [[] for _ in range(V+1)]
     colors = [-1] * (V+1)
     
     # 인접리스트 구현
     for _ in range(E):
-        u, v = map(int, input().split(" "))
+        u, v = map(int, sys.stdin.readline().split(" "))
         maps[u].append(v)
         maps[v].append(u)
     
