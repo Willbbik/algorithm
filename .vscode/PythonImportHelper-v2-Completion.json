@@ -742,82 +742,145 @@
     {
         "label": "input",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "input = sys.stdin.read\ninput_data = input().splitlines()\nN = int(input_data[0])\nM = int(input_data[1])\ngraph = [[] for i in range(N+1)]\nvisited = [False] * (N+1)\n# 노드 서로 연결\nfor line in input_data[2:]:\n    a,b=map(int, line.split())\n    graph[a].append(b)",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "input_data",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "input_data = input().splitlines()\nN = int(input_data[0])\nM = int(input_data[1])\ngraph = [[] for i in range(N+1)]\nvisited = [False] * (N+1)\n# 노드 서로 연결\nfor line in input_data[2:]:\n    a,b=map(int, line.split())\n    graph[a].append(b)\n    graph[b].append(a)",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "N",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "N = int(input_data[0])\nM = int(input_data[1])\ngraph = [[] for i in range(N+1)]\nvisited = [False] * (N+1)\n# 노드 서로 연결\nfor line in input_data[2:]:\n    a,b=map(int, line.split())\n    graph[a].append(b)\n    graph[b].append(a)\nvisited[1] = True",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "M",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "M = int(input_data[1])\ngraph = [[] for i in range(N+1)]\nvisited = [False] * (N+1)\n# 노드 서로 연결\nfor line in input_data[2:]:\n    a,b=map(int, line.split())\n    graph[a].append(b)\n    graph[b].append(a)\nvisited[1] = True\ncnt = 0",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "graph",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "graph = [[] for i in range(N+1)]\nvisited = [False] * (N+1)\n# 노드 서로 연결\nfor line in input_data[2:]:\n    a,b=map(int, line.split())\n    graph[a].append(b)\n    graph[b].append(a)\nvisited[1] = True\ncnt = 0\nQ = deque([1])",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "visited",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "visited = [False] * (N+1)\n# 노드 서로 연결\nfor line in input_data[2:]:\n    a,b=map(int, line.split())\n    graph[a].append(b)\n    graph[b].append(a)\nvisited[1] = True\ncnt = 0\nQ = deque([1])\nwhile Q:",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "visited[1]",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "visited[1] = True\ncnt = 0\nQ = deque([1])\nwhile Q:\n    c=Q.popleft()\n    for i in graph[c]:\n        if visited[i]!=True:\n            Q.append(i)\n            visited[i] = True\n            cnt += 1",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "cnt",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "cnt = 0\nQ = deque([1])\nwhile Q:\n    c=Q.popleft()\n    for i in graph[c]:\n        if visited[i]!=True:\n            Q.append(i)\n            visited[i] = True\n            cnt += 1\nprint(cnt)",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
         "documentation": {}
     },
     {
         "label": "Q",
         "kind": 5,
-        "importPath": "백준.실버.2606",
-        "description": "백준.실버.2606",
+        "importPath": "백준.실버.2606-bfs",
+        "description": "백준.실버.2606-bfs",
         "peekOfCode": "Q = deque([1])\nwhile Q:\n    c=Q.popleft()\n    for i in graph[c]:\n        if visited[i]!=True:\n            Q.append(i)\n            visited[i] = True\n            cnt += 1\nprint(cnt)",
-        "detail": "백준.실버.2606",
+        "detail": "백준.실버.2606-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.2606-dfs",
+        "description": "백준.실버.2606-dfs",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\ndef dfs(node):\n    visited[node] = True\n    global cnt\n    for e in maps[node]:\n        if(visited[e] == False):\n            cnt += 1\n            dfs(e)\nN = int(input())",
+        "detail": "백준.실버.2606-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "dfs",
+        "kind": 2,
+        "importPath": "백준.실버.2606-dfs",
+        "description": "백준.실버.2606-dfs",
+        "peekOfCode": "def dfs(node):\n    visited[node] = True\n    global cnt\n    for e in maps[node]:\n        if(visited[e] == False):\n            cnt += 1\n            dfs(e)\nN = int(input())\nK = int(input())\nglobal cnt",
+        "detail": "백준.실버.2606-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.2606-dfs",
+        "description": "백준.실버.2606-dfs",
+        "peekOfCode": "N = int(input())\nK = int(input())\nglobal cnt\nmaps = [[] for _ in range(N+1)]\nvisited = [False] * (N+1)\ncnt = 0\n# 노드 연결\nfor _ in range(K):\n    a, b = map(int, input().split(\" \"))\n    maps[a].append(b)",
+        "detail": "백준.실버.2606-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "K",
+        "kind": 5,
+        "importPath": "백준.실버.2606-dfs",
+        "description": "백준.실버.2606-dfs",
+        "peekOfCode": "K = int(input())\nglobal cnt\nmaps = [[] for _ in range(N+1)]\nvisited = [False] * (N+1)\ncnt = 0\n# 노드 연결\nfor _ in range(K):\n    a, b = map(int, input().split(\" \"))\n    maps[a].append(b)\n    maps[b].append(a)",
+        "detail": "백준.실버.2606-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "maps",
+        "kind": 5,
+        "importPath": "백준.실버.2606-dfs",
+        "description": "백준.실버.2606-dfs",
+        "peekOfCode": "maps = [[] for _ in range(N+1)]\nvisited = [False] * (N+1)\ncnt = 0\n# 노드 연결\nfor _ in range(K):\n    a, b = map(int, input().split(\" \"))\n    maps[a].append(b)\n    maps[b].append(a)\ndfs(1)\nprint(cnt)",
+        "detail": "백준.실버.2606-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "visited",
+        "kind": 5,
+        "importPath": "백준.실버.2606-dfs",
+        "description": "백준.실버.2606-dfs",
+        "peekOfCode": "visited = [False] * (N+1)\ncnt = 0\n# 노드 연결\nfor _ in range(K):\n    a, b = map(int, input().split(\" \"))\n    maps[a].append(b)\n    maps[b].append(a)\ndfs(1)\nprint(cnt)",
+        "detail": "백준.실버.2606-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.2606-dfs",
+        "description": "백준.실버.2606-dfs",
+        "peekOfCode": "cnt = 0\n# 노드 연결\nfor _ in range(K):\n    a, b = map(int, input().split(\" \"))\n    maps[a].append(b)\n    maps[b].append(a)\ndfs(1)\nprint(cnt)",
+        "detail": "백준.실버.2606-dfs",
         "documentation": {}
     },
     {
