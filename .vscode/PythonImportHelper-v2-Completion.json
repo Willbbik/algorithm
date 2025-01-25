@@ -120,6 +120,14 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
@@ -674,6 +682,78 @@
         "description": "백준.실버.1697",
         "peekOfCode": "visited = [0]* (MAX+1)\ndef bfs(n):\n    q = deque()\n    q.append(n)\n    while q:\n        a = q.popleft()\n        if(a == K):\n            q.clear()\n            return visited[a]\n        for i in (a-1, a+1, a*2):",
         "detail": "백준.실버.1697",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\ndef bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[y][x] = True\n    nodeCnt = 1\n    while Q:\n        nX, nY = Q.popleft()\n        for i in range(4):",
+        "detail": "백준.실버.1926-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "def bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[y][x] = True\n    nodeCnt = 1\n    while Q:\n        nX, nY = Q.popleft()\n        for i in range(4):\n            newX = nX + moveX[i]\n            newY = nY + moveY[i]",
+        "detail": "백준.실버.1926-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "maxWidth",
+        "kind": 5,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "maxWidth = 0\ncnt = 0\nmoveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):",
+        "detail": "백준.실버.1926-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "cnt = 0\nmoveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):",
+        "detail": "백준.실버.1926-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "moveX",
+        "kind": 5,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "moveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1",
+        "detail": "백준.실버.1926-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "moveY",
+        "kind": 5,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "moveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1\n            result = bfs(x, y)",
+        "detail": "백준.실버.1926-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "maps",
+        "kind": 5,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "maps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1\n            result = bfs(x, y)\n            if(result > maxWidth):",
+        "detail": "백준.실버.1926-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "visited",
+        "kind": 5,
+        "importPath": "백준.실버.1926-bfs",
+        "description": "백준.실버.1926-bfs",
+        "peekOfCode": "visited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1\n            result = bfs(x, y)\n            if(result > maxWidth):\n                maxWidth = result",
+        "detail": "백준.실버.1926-bfs",
         "documentation": {}
     },
     {
