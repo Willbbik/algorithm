@@ -677,6 +677,78 @@
         "documentation": {}
     },
     {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\ndef dfs(x, y, count):\n    visited[y][x] = True\n    for i in range(4):\n        newX = x + moveX[i]\n        newY = y + moveY[i]\n        if(visited[newY][newX] == True):\n            continue\n        if(newY >= n or newY < 0 or newX >= m or newX < 0):",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "dfs",
+        "kind": 2,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "def dfs(x, y, count):\n    visited[y][x] = True\n    for i in range(4):\n        newX = x + moveX[i]\n        newY = y + moveY[i]\n        if(visited[newY][newX] == True):\n            continue\n        if(newY >= n or newY < 0 or newX >= m or newX < 0):\n            continue\n        if(maps[newY][newX] == 1):",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "maxWidth",
+        "kind": 5,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "maxWidth = 0\ncnt = 0\nmoveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "cnt = 0\nmoveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "moveX",
+        "kind": 5,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "moveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "moveY",
+        "kind": 5,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "moveY = [0, -1, 0, 1]\nmaps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1\n            result = dfs(x, y, 0)",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "maps",
+        "kind": 5,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "maps = []\nvisited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1\n            result = dfs(x, y, 0)\n            if(result > maxWidth):",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
+        "label": "visited",
+        "kind": 5,
+        "importPath": "백준.실버.1926-dfs",
+        "description": "백준.실버.1926-dfs",
+        "peekOfCode": "visited = [[False] * (m+1) for _ in range(n+1)]\nfor _ in range(n):\n    maps.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and maps[y][x] == 1):\n            cnt += 1\n            result = dfs(x, y, 0)\n            if(result > maxWidth):\n                maxWidth = result",
+        "detail": "백준.실버.1926-dfs",
+        "documentation": {}
+    },
+    {
         "label": "bfs",
         "kind": 2,
         "importPath": "백준.실버.2468",
