@@ -1177,5 +1177,32 @@
         "peekOfCode": "moveY = [0, -1, 0, 1]\ndef bfs(a, b):\n    Q = deque()\n    Q.append((a, b))\n    arr[b][a] = 0\n    mapCnt = 1\n    while Q:\n        x, y = Q.popleft()\n        for i in range(4):\n            ny = y + moveY[i]",
         "detail": "백준.실버.bfsdfs.2667",
         "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.bruteforce.1018",
+        "description": "백준.실버.bruteforce.1018",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nN, M = map(int, input().split(\" \"))\nresult = []\nmaps = []\nfor _ in range(N):\n    maps.append(list(input()))\nfor y in range(N-7):\n    for x in range(M-7):\n        white = 0",
+        "detail": "백준.실버.bruteforce.1018",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1018",
+        "description": "백준.실버.bruteforce.1018",
+        "peekOfCode": "result = []\nmaps = []\nfor _ in range(N):\n    maps.append(list(input()))\nfor y in range(N-7):\n    for x in range(M-7):\n        white = 0\n        black = 0\n        for a in range(y, y+8):\n            for b in range(x, x+8):",
+        "detail": "백준.실버.bruteforce.1018",
+        "documentation": {}
+    },
+    {
+        "label": "maps",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1018",
+        "description": "백준.실버.bruteforce.1018",
+        "peekOfCode": "maps = []\nfor _ in range(N):\n    maps.append(list(input()))\nfor y in range(N-7):\n    for x in range(M-7):\n        white = 0\n        black = 0\n        for a in range(y, y+8):\n            for b in range(x, x+8):\n                # 짝수인 경우 무조건 첫 칸의 색깔과 같아야함",
+        "detail": "백준.실버.bruteforce.1018",
+        "documentation": {}
     }
 ]
