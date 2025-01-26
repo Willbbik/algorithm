@@ -8,18 +8,6 @@ from collections import deque
 def input():
     return sys.stdin.readline()
 
-# 인접해있는 물 개수 구하기
-def getWaterLenth(x, y):
-    for i in range(4):
-        newX = x + moveX[i]
-        newY = y + moveY[i]
-
-        if(newY >= N or newY < 0 or newX >= M or newX < 0):
-            continue
-        
-        if(maps[newY][newX] == 0):
-            waters[y][x] += 1
-
 def bfs(x, y):
     Q = deque()
     Q.append((x, y))

@@ -427,16 +427,7 @@
         "kind": 2,
         "importPath": "백준.골드.2573-bfs",
         "description": "백준.골드.2573-bfs",
-        "peekOfCode": "def input():\n    return sys.stdin.readline()\n# 인접해있는 물 개수 구하기\ndef getWaterLenth(x, y):\n    for i in range(4):\n        newX = x + moveX[i]\n        newY = y + moveY[i]\n        if(newY >= N or newY < 0 or newX >= M or newX < 0):\n            continue\n        if(maps[newY][newX] == 0):",
-        "detail": "백준.골드.2573-bfs",
-        "documentation": {}
-    },
-    {
-        "label": "getWaterLenth",
-        "kind": 2,
-        "importPath": "백준.골드.2573-bfs",
-        "description": "백준.골드.2573-bfs",
-        "peekOfCode": "def getWaterLenth(x, y):\n    for i in range(4):\n        newX = x + moveX[i]\n        newY = y + moveY[i]\n        if(newY >= N or newY < 0 or newX >= M or newX < 0):\n            continue\n        if(maps[newY][newX] == 0):\n            waters[y][x] += 1\ndef bfs(x, y):\n    Q = deque()",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\ndef bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[y][x] = True\n    while Q:\n        nowX, nowY = Q.popleft()\n        for i in range(4):\n            newX = nowX + moveX[i]",
         "detail": "백준.골드.2573-bfs",
         "documentation": {}
     },
