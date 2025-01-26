@@ -128,6 +128,14 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
@@ -412,6 +420,87 @@
         "description": "백준.골드.1707",
         "peekOfCode": "K = int(sys.stdin.readline())\nfor _ in range(K):\n    V, E = map(int, sys.stdin.readline().split(\" \"))\n    maps = [[] for _ in range(V+1)]\n    colors = [-1] * (V+1)\n    # 인접리스트 구현\n    for _ in range(E):\n        u, v = map(int, sys.stdin.readline().split(\" \"))\n        maps[u].append(v)\n        maps[v].append(u)",
         "detail": "백준.골드.1707",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\n# 인접해있는 물 개수 구하기\ndef getWaterLenth(x, y):\n    for i in range(4):\n        newX = x + moveX[i]\n        newY = y + moveY[i]\n        if(newY >= N or newY < 0 or newX >= M or newX < 0):\n            continue\n        if(maps[newY][newX] == 0):",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "getWaterLenth",
+        "kind": 2,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "def getWaterLenth(x, y):\n    for i in range(4):\n        newX = x + moveX[i]\n        newY = y + moveY[i]\n        if(newY >= N or newY < 0 or newX >= M or newX < 0):\n            continue\n        if(maps[newY][newX] == 0):\n            waters[y][x] += 1\ndef bfs(x, y):\n    Q = deque()",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "def bfs(x, y):\n    Q = deque()\n    Q.append((x, y))\n    visited[y][x] = True\n    while Q:\n        nowX, nowY = Q.popleft()\n        for i in range(4):\n            newX = nowX + moveX[i]\n            newY = nowY + moveY[i]\n            if(newY >= N or newY < 0 or newX >= M or newX < 0):",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "moveX",
+        "kind": 5,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "moveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nmaps = []\nresult = True\nyear = 1\ncnt = 0\nfor _ in range(N):\n    maps.append(list(map(int , input().split(\" \"))))\nwhile result:\n    visited = [[False] * (M+1) for _ in range(N+1)]",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "moveY",
+        "kind": 5,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "moveY = [0, -1, 0, 1]\nmaps = []\nresult = True\nyear = 1\ncnt = 0\nfor _ in range(N):\n    maps.append(list(map(int , input().split(\" \"))))\nwhile result:\n    visited = [[False] * (M+1) for _ in range(N+1)]\n    waters = [[0] * (M+1) for _ in range(N+1)]",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "maps",
+        "kind": 5,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "maps = []\nresult = True\nyear = 1\ncnt = 0\nfor _ in range(N):\n    maps.append(list(map(int , input().split(\" \"))))\nwhile result:\n    visited = [[False] * (M+1) for _ in range(N+1)]\n    waters = [[0] * (M+1) for _ in range(N+1)]\n    # 위치별 인접해있는 물 개수 구하기",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "result = True\nyear = 1\ncnt = 0\nfor _ in range(N):\n    maps.append(list(map(int , input().split(\" \"))))\nwhile result:\n    visited = [[False] * (M+1) for _ in range(N+1)]\n    waters = [[0] * (M+1) for _ in range(N+1)]\n    # 위치별 인접해있는 물 개수 구하기\n    for y in range(N):",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "year = 1\ncnt = 0\nfor _ in range(N):\n    maps.append(list(map(int , input().split(\" \"))))\nwhile result:\n    visited = [[False] * (M+1) for _ in range(N+1)]\n    waters = [[0] * (M+1) for _ in range(N+1)]\n    # 위치별 인접해있는 물 개수 구하기\n    for y in range(N):\n        for x in range(M):",
+        "detail": "백준.골드.2573-bfs",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.골드.2573-bfs",
+        "description": "백준.골드.2573-bfs",
+        "peekOfCode": "cnt = 0\nfor _ in range(N):\n    maps.append(list(map(int , input().split(\" \"))))\nwhile result:\n    visited = [[False] * (M+1) for _ in range(N+1)]\n    waters = [[0] * (M+1) for _ in range(N+1)]\n    # 위치별 인접해있는 물 개수 구하기\n    for y in range(N):\n        for x in range(M):\n            if(maps[y][x] != 0):",
+        "detail": "백준.골드.2573-bfs",
         "documentation": {}
     },
     {
