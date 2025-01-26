@@ -38,6 +38,9 @@ def bfs(x, y):
             if(visited[newY][newX]):
                 continue
             
+            if(maps[newY][newX] == 0):
+                maps[nowY][nowX] = max(0, maps[nowY][nowX] - 1)
+            
             if(maps[newY][newX] > 0):
                 Q.append((newX, newY))
                 visited[newY][newX] = True
@@ -49,7 +52,7 @@ moveX = [1, 0, -1, 0]
 moveY = [0, -1, 0, 1]
 maps = []
 result = True
-year = 1
+year = 0
 cnt = 0
 
 for _ in range(N):
@@ -59,18 +62,6 @@ while result:
     visited = [[False] * (M+1) for _ in range(N+1)]
     waters = [[0] * (M+1) for _ in range(N+1)]
 
-    # 위치별 인접해있는 물 개수 구하기
-    for y in range(N):
-        for x in range(M):
-            if(maps[y][x] != 0):
-                getWaterLenth(x, y)
-                
-    # 각 빙산 값 줄이기
-    for y in range(N):
-        for x in range(M):
-            if(maps[y][x] != 0):
-                maps[y][x] = max(0, maps[y][x] - waters[y][x])
-                
     # 빙하 덩어리 개수 구하기
     for y in range(N):
         for x in range(M):
@@ -80,7 +71,7 @@ while result:
                 
                 if(cnt >= 2):
                     break
-                
+
     if(cnt >= 2):
         print(year)
         result = False
