@@ -1204,5 +1204,41 @@
         "peekOfCode": "maps = []\nfor _ in range(N):\n    maps.append(list(input()))\nfor y in range(N-7):\n    for x in range(M-7):\n        white = 0\n        black = 0\n        for a in range(y, y+8):\n            for b in range(x, x+8):\n                # 짝수인 경우 무조건 첫 칸의 색깔과 같아야함",
         "detail": "백준.실버.bruteforce.1018",
         "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.bruteforce.1436",
+        "description": "백준.실버.bruteforce.1436",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nN = int(input())\ncnt = 0\nresult = 666\nwhile True:\n    if \"666\" in str(result):\n        cnt += 1\n    if cnt == N:\n        break",
+        "detail": "백준.실버.bruteforce.1436",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1436",
+        "description": "백준.실버.bruteforce.1436",
+        "peekOfCode": "N = int(input())\ncnt = 0\nresult = 666\nwhile True:\n    if \"666\" in str(result):\n        cnt += 1\n    if cnt == N:\n        break\n    result += 1\nprint(result)",
+        "detail": "백준.실버.bruteforce.1436",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1436",
+        "description": "백준.실버.bruteforce.1436",
+        "peekOfCode": "cnt = 0\nresult = 666\nwhile True:\n    if \"666\" in str(result):\n        cnt += 1\n    if cnt == N:\n        break\n    result += 1\nprint(result)",
+        "detail": "백준.실버.bruteforce.1436",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1436",
+        "description": "백준.실버.bruteforce.1436",
+        "peekOfCode": "result = 666\nwhile True:\n    if \"666\" in str(result):\n        cnt += 1\n    if cnt == N:\n        break\n    result += 1\nprint(result)",
+        "detail": "백준.실버.bruteforce.1436",
+        "documentation": {}
     }
 ]
