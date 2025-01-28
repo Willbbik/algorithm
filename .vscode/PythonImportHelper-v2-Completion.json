@@ -1285,5 +1285,50 @@
         "peekOfCode": "year = 0\nwhile True: \n    year += 1\n    e += 1\n    s += 1\n    m += 1\n    if(e > 15):\n        e = 1\n    if(s > 28):\n        s = 1",
         "detail": "백준.실버.bruteforce.1476",
         "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.bruteforce.2003",
+        "description": "백준.실버.bruteforce.2003",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nN, M = map(int, input().split(\" \"))\narr = list(map(int, input().split(\" \")))\ncnt = 0\ntotal = 0\nendPointer = 0\nfor startPointer in range(N):\n    while total < M and endPointer < N:\n        total += arr[endPointer]",
+        "detail": "백준.실버.bruteforce.2003",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.2003",
+        "description": "백준.실버.bruteforce.2003",
+        "peekOfCode": "arr = list(map(int, input().split(\" \")))\ncnt = 0\ntotal = 0\nendPointer = 0\nfor startPointer in range(N):\n    while total < M and endPointer < N:\n        total += arr[endPointer]\n        endPointer += 1\n    if(total == M):\n        cnt += 1",
+        "detail": "백준.실버.bruteforce.2003",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.2003",
+        "description": "백준.실버.bruteforce.2003",
+        "peekOfCode": "cnt = 0\ntotal = 0\nendPointer = 0\nfor startPointer in range(N):\n    while total < M and endPointer < N:\n        total += arr[endPointer]\n        endPointer += 1\n    if(total == M):\n        cnt += 1\n    total -= arr[startPointer]",
+        "detail": "백준.실버.bruteforce.2003",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.2003",
+        "description": "백준.실버.bruteforce.2003",
+        "peekOfCode": "total = 0\nendPointer = 0\nfor startPointer in range(N):\n    while total < M and endPointer < N:\n        total += arr[endPointer]\n        endPointer += 1\n    if(total == M):\n        cnt += 1\n    total -= arr[startPointer]\nprint(cnt)",
+        "detail": "백준.실버.bruteforce.2003",
+        "documentation": {}
+    },
+    {
+        "label": "endPointer",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.2003",
+        "description": "백준.실버.bruteforce.2003",
+        "peekOfCode": "endPointer = 0\nfor startPointer in range(N):\n    while total < M and endPointer < N:\n        total += arr[endPointer]\n        endPointer += 1\n    if(total == M):\n        cnt += 1\n    total -= arr[startPointer]\nprint(cnt)",
+        "detail": "백준.실버.bruteforce.2003",
+        "documentation": {}
     }
 ]
