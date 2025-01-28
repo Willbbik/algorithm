@@ -1240,5 +1240,50 @@
         "peekOfCode": "result = 666\nwhile True:\n    if \"666\" in str(result):\n        cnt += 1\n    if cnt == N:\n        break\n    result += 1\nprint(result)",
         "detail": "백준.실버.bruteforce.1436",
         "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.bruteforce.1476",
+        "description": "백준.실버.bruteforce.1476",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nE, S, M = map(int, input().split(\" \"))\ne = 0\ns = 0\nm = 0\nyear = 0\nwhile True: \n    year += 1\n    e += 1",
+        "detail": "백준.실버.bruteforce.1476",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1476",
+        "description": "백준.실버.bruteforce.1476",
+        "peekOfCode": "e = 0\ns = 0\nm = 0\nyear = 0\nwhile True: \n    year += 1\n    e += 1\n    s += 1\n    m += 1\n    if(e > 15):",
+        "detail": "백준.실버.bruteforce.1476",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1476",
+        "description": "백준.실버.bruteforce.1476",
+        "peekOfCode": "s = 0\nm = 0\nyear = 0\nwhile True: \n    year += 1\n    e += 1\n    s += 1\n    m += 1\n    if(e > 15):\n        e = 1",
+        "detail": "백준.실버.bruteforce.1476",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1476",
+        "description": "백준.실버.bruteforce.1476",
+        "peekOfCode": "m = 0\nyear = 0\nwhile True: \n    year += 1\n    e += 1\n    s += 1\n    m += 1\n    if(e > 15):\n        e = 1\n    if(s > 28):",
+        "detail": "백준.실버.bruteforce.1476",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1476",
+        "description": "백준.실버.bruteforce.1476",
+        "peekOfCode": "year = 0\nwhile True: \n    year += 1\n    e += 1\n    s += 1\n    m += 1\n    if(e > 15):\n        e = 1\n    if(s > 28):\n        s = 1",
+        "detail": "백준.실버.bruteforce.1476",
+        "documentation": {}
     }
 ]
