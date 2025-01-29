@@ -1325,6 +1325,33 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.bruteforce.1543",
+        "description": "백준.실버.bruteforce.1543",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nstr = input()\ntargetStr = input()\nprint(str.count(targetStr))",
+        "detail": "백준.실버.bruteforce.1543",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1543",
+        "description": "백준.실버.bruteforce.1543",
+        "peekOfCode": "str = input()\ntargetStr = input()\nprint(str.count(targetStr))",
+        "detail": "백준.실버.bruteforce.1543",
+        "documentation": {}
+    },
+    {
+        "label": "targetStr",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.1543",
+        "description": "백준.실버.bruteforce.1543",
+        "peekOfCode": "targetStr = input()\nprint(str.count(targetStr))",
+        "detail": "백준.실버.bruteforce.1543",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.bruteforce.2003",
         "description": "백준.실버.bruteforce.2003",
         "peekOfCode": "def input():\n    return sys.stdin.readline()\nN, M = map(int, input().split(\" \"))\narr = list(map(int, input().split(\" \")))\ncnt = 0\ntotal = 0\nendPointer = 0\nfor startPointer in range(N):\n    while total < M and endPointer < N:\n        total += arr[endPointer]",
