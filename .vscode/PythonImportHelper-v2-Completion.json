@@ -1280,6 +1280,51 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.bruteforce.14501",
+        "description": "백준.실버.bruteforce.14501",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\n# N+1일째 되는날까지 금액 계산이 필요하기 때문에.\ndp = [0] * (N+1)\ndays = [0] * (N)\nmoneys = [0] * (N)\nfor i in range(0, N):\n    T, P = map(int, input().split())\n    days[i] = T",
+        "detail": "백준.실버.bruteforce.14501",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.14501",
+        "description": "백준.실버.bruteforce.14501",
+        "peekOfCode": "N = int(input())\n# N+1일째 되는날까지 금액 계산이 필요하기 때문에.\ndp = [0] * (N+1)\ndays = [0] * (N)\nmoneys = [0] * (N)\nfor i in range(0, N):\n    T, P = map(int, input().split())\n    days[i] = T\n    moneys[i] = P\n# N+1일째 되는날 완료되는 상담이 있는지 확인하기 위해서 N+1",
+        "detail": "백준.실버.bruteforce.14501",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.14501",
+        "description": "백준.실버.bruteforce.14501",
+        "peekOfCode": "dp = [0] * (N+1)\ndays = [0] * (N)\nmoneys = [0] * (N)\nfor i in range(0, N):\n    T, P = map(int, input().split())\n    days[i] = T\n    moneys[i] = P\n# N+1일째 되는날 완료되는 상담이 있는지 확인하기 위해서 N+1\nfor i in range(N+1):\n    arr = []",
+        "detail": "백준.실버.bruteforce.14501",
+        "documentation": {}
+    },
+    {
+        "label": "days",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.14501",
+        "description": "백준.실버.bruteforce.14501",
+        "peekOfCode": "days = [0] * (N)\nmoneys = [0] * (N)\nfor i in range(0, N):\n    T, P = map(int, input().split())\n    days[i] = T\n    moneys[i] = P\n# N+1일째 되는날 완료되는 상담이 있는지 확인하기 위해서 N+1\nfor i in range(N+1):\n    arr = []\n    for k in range(0, i):",
+        "detail": "백준.실버.bruteforce.14501",
+        "documentation": {}
+    },
+    {
+        "label": "moneys",
+        "kind": 5,
+        "importPath": "백준.실버.bruteforce.14501",
+        "description": "백준.실버.bruteforce.14501",
+        "peekOfCode": "moneys = [0] * (N)\nfor i in range(0, N):\n    T, P = map(int, input().split())\n    days[i] = T\n    moneys[i] = P\n# N+1일째 되는날 완료되는 상담이 있는지 확인하기 위해서 N+1\nfor i in range(N+1):\n    arr = []\n    for k in range(0, i):\n        if(k + days[k] <= i):",
+        "detail": "백준.실버.bruteforce.14501",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.bruteforce.1476",
         "description": "백준.실버.bruteforce.1476",
         "peekOfCode": "def input():\n    return sys.stdin.readline()\nE, S, M = map(int, input().split(\" \"))\ne = 0\ns = 0\nm = 0\nyear = 0\nwhile True: \n    year += 1\n    e += 1",
