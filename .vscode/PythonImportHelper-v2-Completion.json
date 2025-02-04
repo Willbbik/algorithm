@@ -1478,6 +1478,42 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.dp.13699",
+        "description": "백준.실버.dp.13699",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\ndp = [0] * (N+1)\ndp[0] = 1\nfor i in range(1, N+1):\n    for j in range(i):\n        dp[i] += dp[j] * dp[i-j-1]\nprint(dp[N])",
+        "detail": "백준.실버.dp.13699",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.dp.13699",
+        "description": "백준.실버.dp.13699",
+        "peekOfCode": "N = int(input())\ndp = [0] * (N+1)\ndp[0] = 1\nfor i in range(1, N+1):\n    for j in range(i):\n        dp[i] += dp[j] * dp[i-j-1]\nprint(dp[N])",
+        "detail": "백준.실버.dp.13699",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "백준.실버.dp.13699",
+        "description": "백준.실버.dp.13699",
+        "peekOfCode": "dp = [0] * (N+1)\ndp[0] = 1\nfor i in range(1, N+1):\n    for j in range(i):\n        dp[i] += dp[j] * dp[i-j-1]\nprint(dp[N])",
+        "detail": "백준.실버.dp.13699",
+        "documentation": {}
+    },
+    {
+        "label": "dp[0]",
+        "kind": 5,
+        "importPath": "백준.실버.dp.13699",
+        "description": "백준.실버.dp.13699",
+        "peekOfCode": "dp[0] = 1\nfor i in range(1, N+1):\n    for j in range(i):\n        dp[i] += dp[j] * dp[i-j-1]\nprint(dp[N])",
+        "detail": "백준.실버.dp.13699",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.dp.2839",
         "description": "백준.실버.dp.2839",
         "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\nif(N % 5 == 0):\n    print(N // 5)\nelse:\n    p = 0\n    while N > 0:\n        N -= 3\n        p += 1",
