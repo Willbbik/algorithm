@@ -1474,5 +1474,23 @@
         "peekOfCode": "endPointer = 0\nfor startPointer in range(N):\n    while total < M and endPointer < N:\n        total += arr[endPointer]\n        endPointer += 1\n    if(total == M):\n        cnt += 1\n    total -= arr[startPointer]\nprint(cnt)",
         "detail": "백준.실버.bruteforce.2003",
         "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.dp.2839",
+        "description": "백준.실버.dp.2839",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\nif(N % 5 == 0):\n    print(N // 5)\nelse:\n    p = 0\n    while N > 0:\n        N -= 3\n        p += 1",
+        "detail": "백준.실버.dp.2839",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.dp.2839",
+        "description": "백준.실버.dp.2839",
+        "peekOfCode": "N = int(input())\nif(N % 5 == 0):\n    print(N // 5)\nelse:\n    p = 0\n    while N > 0:\n        N -= 3\n        p += 1\n        if(N % 5 == 0):\n            print(N//5 + p)",
+        "detail": "백준.실버.dp.2839",
+        "documentation": {}
     }
 ]
