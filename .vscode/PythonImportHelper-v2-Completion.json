@@ -1532,6 +1532,51 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.dp.2579",
+        "description": "백준.실버.dp.2579",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\ndef solvedp():\n    if(N == 1):\n        print(arr[0])\n        return\n    if(N == 2):\n        print(arr[0] + arr[1])\n        return\n    if(N == 3):",
+        "detail": "백준.실버.dp.2579",
+        "documentation": {}
+    },
+    {
+        "label": "solvedp",
+        "kind": 2,
+        "importPath": "백준.실버.dp.2579",
+        "description": "백준.실버.dp.2579",
+        "peekOfCode": "def solvedp():\n    if(N == 1):\n        print(arr[0])\n        return\n    if(N == 2):\n        print(arr[0] + arr[1])\n        return\n    if(N == 3):\n        print(max(arr[2]+arr[1], arr[2]+arr[0]))\n        return",
+        "detail": "백준.실버.dp.2579",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.dp.2579",
+        "description": "백준.실버.dp.2579",
+        "peekOfCode": "N = int(input())\narr = [0] * (N+1)\ndp = [0] * (N+1)\nfor i in range(0, N):\n    arr[i] = int(input())\nsolvedp()",
+        "detail": "백준.실버.dp.2579",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.dp.2579",
+        "description": "백준.실버.dp.2579",
+        "peekOfCode": "arr = [0] * (N+1)\ndp = [0] * (N+1)\nfor i in range(0, N):\n    arr[i] = int(input())\nsolvedp()",
+        "detail": "백준.실버.dp.2579",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "백준.실버.dp.2579",
+        "description": "백준.실버.dp.2579",
+        "peekOfCode": "dp = [0] * (N+1)\nfor i in range(0, N):\n    arr[i] = int(input())\nsolvedp()",
+        "detail": "백준.실버.dp.2579",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.dp.2839",
         "description": "백준.실버.dp.2839",
         "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\nif(N % 5 == 0):\n    print(N // 5)\nelse:\n    p = 0\n    while N > 0:\n        N -= 3\n        p += 1",
