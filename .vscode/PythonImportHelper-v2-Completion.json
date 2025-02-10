@@ -1532,6 +1532,42 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.dp.17484",
+        "description": "백준.실버.dp.17484",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN, M = map(int, input().split())\nmaps = []\ndp = [[[float('inf')] * 3 for _ in range(M)] for _ in range(N+1)]\nfor _ in range(N):\n    maps.append(list(map(int, input().split())))\nfor i in range(M):\n    dp[0][i] = [maps[0][i], maps[0][i], maps[0][i]]\nfor y in range(1, N):",
+        "detail": "백준.실버.dp.17484",
+        "documentation": {}
+    },
+    {
+        "label": "maps",
+        "kind": 5,
+        "importPath": "백준.실버.dp.17484",
+        "description": "백준.실버.dp.17484",
+        "peekOfCode": "maps = []\ndp = [[[float('inf')] * 3 for _ in range(M)] for _ in range(N+1)]\nfor _ in range(N):\n    maps.append(list(map(int, input().split())))\nfor i in range(M):\n    dp[0][i] = [maps[0][i], maps[0][i], maps[0][i]]\nfor y in range(1, N):\n    for x in range(M):\n        for i in range(3):\n            # 맨 왼쪽이면 왼쪽 대각선의 위의 값을",
+        "detail": "백준.실버.dp.17484",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "백준.실버.dp.17484",
+        "description": "백준.실버.dp.17484",
+        "peekOfCode": "dp = [[[float('inf')] * 3 for _ in range(M)] for _ in range(N+1)]\nfor _ in range(N):\n    maps.append(list(map(int, input().split())))\nfor i in range(M):\n    dp[0][i] = [maps[0][i], maps[0][i], maps[0][i]]\nfor y in range(1, N):\n    for x in range(M):\n        for i in range(3):\n            # 맨 왼쪽이면 왼쪽 대각선의 위의 값을\n            # 맨 오른쪽이면 오른쪽 대각선 위의 값을",
+        "detail": "백준.실버.dp.17484",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "백준.실버.dp.17484",
+        "description": "백준.실버.dp.17484",
+        "peekOfCode": "result = 1e9\nfor i in range(M):\n    result = min(result, min(dp[N-1][i]))\nprint(result)",
+        "detail": "백준.실버.dp.17484",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.dp.2579",
         "description": "백준.실버.dp.2579",
         "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\ndef solvedp():\n    if(N == 1):\n        print(arr[0])\n        return\n    if(N == 2):\n        print(arr[0] + arr[1])\n        return\n    if(N == 3):",
