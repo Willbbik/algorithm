@@ -1654,5 +1654,50 @@
         "peekOfCode": "N = int(input())\nif(N % 5 == 0):\n    print(N // 5)\nelse:\n    p = 0\n    while N > 0:\n        N -= 3\n        p += 1\n        if(N % 5 == 0):\n            print(N//5 + p)",
         "detail": "백준.실버.dp.2839",
         "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.implementation.1316",
+        "description": "백준.실버.implementation.1316",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\narr = []\ncnt = 0\nisSuccess = True\nN = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]",
+        "detail": "백준.실버.implementation.1316",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1316",
+        "description": "백준.실버.implementation.1316",
+        "peekOfCode": "arr = []\ncnt = 0\nisSuccess = True\nN = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]\n    for k in range(len(str)):\n        # 이미 나왔던 문자열인데 떨어진 경우라면",
+        "detail": "백준.실버.implementation.1316",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1316",
+        "description": "백준.실버.implementation.1316",
+        "peekOfCode": "cnt = 0\nisSuccess = True\nN = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]\n    for k in range(len(str)):\n        # 이미 나왔던 문자열인데 떨어진 경우라면\n        if str[k] in arr:",
+        "detail": "백준.실버.implementation.1316",
+        "documentation": {}
+    },
+    {
+        "label": "isSuccess",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1316",
+        "description": "백준.실버.implementation.1316",
+        "peekOfCode": "isSuccess = True\nN = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]\n    for k in range(len(str)):\n        # 이미 나왔던 문자열인데 떨어진 경우라면\n        if str[k] in arr:\n            isSuccess = False",
+        "detail": "백준.실버.implementation.1316",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1316",
+        "description": "백준.실버.implementation.1316",
+        "peekOfCode": "N = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]\n    for k in range(len(str)):\n        # 이미 나왔던 문자열인데 떨어진 경우라면\n        if str[k] in arr:\n            isSuccess = False\n            break",
+        "detail": "백준.실버.implementation.1316",
+        "documentation": {}
     }
 ]
