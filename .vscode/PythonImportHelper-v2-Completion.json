@@ -136,6 +136,14 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
@@ -159,6 +167,15 @@
         "importPath": "math",
         "description": "math",
         "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -1698,6 +1715,33 @@
         "description": "백준.실버.implementation.1316",
         "peekOfCode": "N = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]\n    for k in range(len(str)):\n        # 이미 나왔던 문자열인데 떨어진 경우라면\n        if str[k] in arr:\n            isSuccess = False\n            break",
         "detail": "백준.실버.implementation.1316",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.implementation.1966",
+        "description": "백준.실버.implementation.1966",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nK = int(input())\ncnt = 0\nfor i in range(K):\n    N, M = map(int, input().split())\n    arr = list(map(int, input().split()))\n    Q = deque()\n    # json 형식으로\n    for q in range(N):",
+        "detail": "백준.실버.implementation.1966",
+        "documentation": {}
+    },
+    {
+        "label": "K",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1966",
+        "description": "백준.실버.implementation.1966",
+        "peekOfCode": "K = int(input())\ncnt = 0\nfor i in range(K):\n    N, M = map(int, input().split())\n    arr = list(map(int, input().split()))\n    Q = deque()\n    # json 형식으로\n    for q in range(N):\n        data = {\n            \"value\": arr[q],",
+        "detail": "백준.실버.implementation.1966",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1966",
+        "description": "백준.실버.implementation.1966",
+        "peekOfCode": "cnt = 0\nfor i in range(K):\n    N, M = map(int, input().split())\n    arr = list(map(int, input().split()))\n    Q = deque()\n    # json 형식으로\n    for q in range(N):\n        data = {\n            \"value\": arr[q],\n            \"isYn\": M == q",
+        "detail": "백준.실버.implementation.1966",
         "documentation": {}
     },
     {
