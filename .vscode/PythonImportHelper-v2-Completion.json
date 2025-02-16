@@ -1699,5 +1699,68 @@
         "peekOfCode": "N = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]\n    for k in range(len(str)):\n        # 이미 나왔던 문자열인데 떨어진 경우라면\n        if str[k] in arr:\n            isSuccess = False\n            break",
         "detail": "백준.실버.implementation.1316",
         "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.implementation.2941",
+        "description": "백준.실버.implementation.2941",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nstr = input()\narr = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']\ncnt = 0\nstrLength = 0\nlastIndex = 0\ntempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]",
+        "detail": "백준.실버.implementation.2941",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2941",
+        "description": "백준.실버.implementation.2941",
+        "peekOfCode": "str = input()\narr = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']\ncnt = 0\nstrLength = 0\nlastIndex = 0\ntempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]\n    for target in arr:\n        if target in tempStr[lastIndex:]:",
+        "detail": "백준.실버.implementation.2941",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2941",
+        "description": "백준.실버.implementation.2941",
+        "peekOfCode": "arr = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']\ncnt = 0\nstrLength = 0\nlastIndex = 0\ntempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]\n    for target in arr:\n        if target in tempStr[lastIndex:]:\n            cnt += 1",
+        "detail": "백준.실버.implementation.2941",
+        "documentation": {}
+    },
+    {
+        "label": "cnt",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2941",
+        "description": "백준.실버.implementation.2941",
+        "peekOfCode": "cnt = 0\nstrLength = 0\nlastIndex = 0\ntempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]\n    for target in arr:\n        if target in tempStr[lastIndex:]:\n            cnt += 1\n            lastIndex = i+1",
+        "detail": "백준.실버.implementation.2941",
+        "documentation": {}
+    },
+    {
+        "label": "strLength",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2941",
+        "description": "백준.실버.implementation.2941",
+        "peekOfCode": "strLength = 0\nlastIndex = 0\ntempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]\n    for target in arr:\n        if target in tempStr[lastIndex:]:\n            cnt += 1\n            lastIndex = i+1\n            strLength += len(target)",
+        "detail": "백준.실버.implementation.2941",
+        "documentation": {}
+    },
+    {
+        "label": "lastIndex",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2941",
+        "description": "백준.실버.implementation.2941",
+        "peekOfCode": "lastIndex = 0\ntempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]\n    for target in arr:\n        if target in tempStr[lastIndex:]:\n            cnt += 1\n            lastIndex = i+1\n            strLength += len(target)\n            break",
+        "detail": "백준.실버.implementation.2941",
+        "documentation": {}
+    },
+    {
+        "label": "tempStr",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2941",
+        "description": "백준.실버.implementation.2941",
+        "peekOfCode": "tempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]\n    for target in arr:\n        if target in tempStr[lastIndex:]:\n            cnt += 1\n            lastIndex = i+1\n            strLength += len(target)\n            break\nprint(cnt + len(str) - strLength)",
+        "detail": "백준.실버.implementation.2941",
+        "documentation": {}
     }
 ]
