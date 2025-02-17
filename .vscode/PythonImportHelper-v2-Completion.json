@@ -1755,6 +1755,69 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.implementation.2108",
+        "description": "백준.실버.implementation.2108",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\n# 산술평균\ndef fun1():\n    value = sum(arr) / N\n    return round(value)\n# 중앙값\ndef fun2():\n    tempArr = arr\n    tempArr.sort()",
+        "detail": "백준.실버.implementation.2108",
+        "documentation": {}
+    },
+    {
+        "label": "fun1",
+        "kind": 2,
+        "importPath": "백준.실버.implementation.2108",
+        "description": "백준.실버.implementation.2108",
+        "peekOfCode": "def fun1():\n    value = sum(arr) / N\n    return round(value)\n# 중앙값\ndef fun2():\n    tempArr = arr\n    tempArr.sort()\n    idx = len(tempArr) // 2\n    return arr[idx]\n# 최빈값",
+        "detail": "백준.실버.implementation.2108",
+        "documentation": {}
+    },
+    {
+        "label": "fun2",
+        "kind": 2,
+        "importPath": "백준.실버.implementation.2108",
+        "description": "백준.실버.implementation.2108",
+        "peekOfCode": "def fun2():\n    tempArr = arr\n    tempArr.sort()\n    idx = len(tempArr) // 2\n    return arr[idx]\n# 최빈값\ndef fun3():\n    count = Counter(arr) \n    tempArr = count.most_common()\n    maxCnt = tempArr[0][1]",
+        "detail": "백준.실버.implementation.2108",
+        "documentation": {}
+    },
+    {
+        "label": "fun3",
+        "kind": 2,
+        "importPath": "백준.실버.implementation.2108",
+        "description": "백준.실버.implementation.2108",
+        "peekOfCode": "def fun3():\n    count = Counter(arr) \n    tempArr = count.most_common()\n    maxCnt = tempArr[0][1]\n    modes = []\n    for data in tempArr:\n        if(data[1] == maxCnt):\n            modes.append(data[0])\n    if(len(modes) > 1):\n        return sorted(modes)[1]",
+        "detail": "백준.실버.implementation.2108",
+        "documentation": {}
+    },
+    {
+        "label": "fun4",
+        "kind": 2,
+        "importPath": "백준.실버.implementation.2108",
+        "description": "백준.실버.implementation.2108",
+        "peekOfCode": "def fun4():\n    return max(arr) - min(arr)\nN = int(input())\narr = []\nfor _ in range(N):\n    arr.append(int(input()))\nprint(fun1())\nprint(fun2())\nprint(fun3())\nprint(fun4())",
+        "detail": "백준.실버.implementation.2108",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2108",
+        "description": "백준.실버.implementation.2108",
+        "peekOfCode": "N = int(input())\narr = []\nfor _ in range(N):\n    arr.append(int(input()))\nprint(fun1())\nprint(fun2())\nprint(fun3())\nprint(fun4())",
+        "detail": "백준.실버.implementation.2108",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.2108",
+        "description": "백준.실버.implementation.2108",
+        "peekOfCode": "arr = []\nfor _ in range(N):\n    arr.append(int(input()))\nprint(fun1())\nprint(fun2())\nprint(fun3())\nprint(fun4())",
+        "detail": "백준.실버.implementation.2108",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.implementation.2941",
         "description": "백준.실버.implementation.2941",
         "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nstr = input()\narr = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']\ncnt = 0\nstrLength = 0\nlastIndex = 0\ntempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]",
