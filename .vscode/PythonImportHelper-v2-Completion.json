@@ -1728,6 +1728,51 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.implementation.17413",
+        "description": "백준.실버.implementation.17413",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nS = input()\nisTag = False\nstack = []\nstr = \"\"\n# 정상 출력해야 하는 경우\n# ㄴ 태그 안에 있을 때\n# 반대 출력 할 때\n# ㄴ 태그 밖에 있을 때",
+        "detail": "백준.실버.implementation.17413",
+        "documentation": {}
+    },
+    {
+        "label": "S",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.17413",
+        "description": "백준.실버.implementation.17413",
+        "peekOfCode": "S = input()\nisTag = False\nstack = []\nstr = \"\"\n# 정상 출력해야 하는 경우\n# ㄴ 태그 안에 있을 때\n# 반대 출력 할 때\n# ㄴ 태그 밖에 있을 때\n# 언제 출력?\n# 공백, 닫힘 태그, 열림 태그, 맨 마지막",
+        "detail": "백준.실버.implementation.17413",
+        "documentation": {}
+    },
+    {
+        "label": "isTag",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.17413",
+        "description": "백준.실버.implementation.17413",
+        "peekOfCode": "isTag = False\nstack = []\nstr = \"\"\n# 정상 출력해야 하는 경우\n# ㄴ 태그 안에 있을 때\n# 반대 출력 할 때\n# ㄴ 태그 밖에 있을 때\n# 언제 출력?\n# 공백, 닫힘 태그, 열림 태그, 맨 마지막\nfor i in range(len(S)):",
+        "detail": "백준.실버.implementation.17413",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.17413",
+        "description": "백준.실버.implementation.17413",
+        "peekOfCode": "stack = []\nstr = \"\"\n# 정상 출력해야 하는 경우\n# ㄴ 태그 안에 있을 때\n# 반대 출력 할 때\n# ㄴ 태그 밖에 있을 때\n# 언제 출력?\n# 공백, 닫힘 태그, 열림 태그, 맨 마지막\nfor i in range(len(S)):\n    if(S[i] == \"<\"):",
+        "detail": "백준.실버.implementation.17413",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.17413",
+        "description": "백준.실버.implementation.17413",
+        "peekOfCode": "str = \"\"\n# 정상 출력해야 하는 경우\n# ㄴ 태그 안에 있을 때\n# 반대 출력 할 때\n# ㄴ 태그 밖에 있을 때\n# 언제 출력?\n# 공백, 닫힘 태그, 열림 태그, 맨 마지막\nfor i in range(len(S)):\n    if(S[i] == \"<\"):\n        if(isTag == False):",
+        "detail": "백준.실버.implementation.17413",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.implementation.1966",
         "description": "백준.실버.implementation.1966",
         "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nK = int(input())\ncnt = 0\nfor i in range(K):\n    N, M = map(int, input().split())\n    arr = list(map(int, input().split()))\n    Q = deque()\n    # json 형식으로\n    for q in range(N):",
