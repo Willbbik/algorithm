@@ -144,6 +144,14 @@
         "documentation": {}
     },
     {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deepcopy",
         "importPath": "copy",
         "description": "copy",
