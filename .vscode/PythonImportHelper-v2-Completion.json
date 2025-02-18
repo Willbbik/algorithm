@@ -1683,6 +1683,33 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.implementation.1051",
+        "description": "백준.실버.implementation.1051",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\n    # 탑다운 방식으로 찾다가 찾으면 바로 종료하는 느낌으로다가.\n    # 정사각형의 최대 크기는 min(N or M) * min(N or M)이 된다.\nN, M = map(int, input().split(\" \"))\narr = []\nfor _ in range(N):\n    arr.append(list(map(int, input())))\n# 정사각형이기에 최소값이 곧 길이\nminValue = min(N, M)",
+        "detail": "백준.실버.implementation.1051",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1051",
+        "description": "백준.실버.implementation.1051",
+        "peekOfCode": "arr = []\nfor _ in range(N):\n    arr.append(list(map(int, input())))\n# 정사각형이기에 최소값이 곧 길이\nminValue = min(N, M)\nfor a in range(minValue-1, 0, -1):\n    # 한칸씩 줄일때마다 상하좌우로 한칸씩 이동하면서 찾아야함.\n    for y in range(N):\n        for x in range(M):\n            yIndex = y + a",
+        "detail": "백준.실버.implementation.1051",
+        "documentation": {}
+    },
+    {
+        "label": "minValue",
+        "kind": 5,
+        "importPath": "백준.실버.implementation.1051",
+        "description": "백준.실버.implementation.1051",
+        "peekOfCode": "minValue = min(N, M)\nfor a in range(minValue-1, 0, -1):\n    # 한칸씩 줄일때마다 상하좌우로 한칸씩 이동하면서 찾아야함.\n    for y in range(N):\n        for x in range(M):\n            yIndex = y + a\n            xIndex = x + a\n            if(yIndex >= N or xIndex >= M):\n                continue\n            isSame = arr[y][x] == arr[y][xIndex] == arr[yIndex][x] == arr[yIndex][xIndex]",
+        "detail": "백준.실버.implementation.1051",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.implementation.1316",
         "description": "백준.실버.implementation.1316",
         "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\narr = []\ncnt = 0\nisSuccess = True\nN = int(input())\nfor i in range(N):\n    str = input()\n    # 마지막 문자열 기록\n    beforeStr = str[0]",
