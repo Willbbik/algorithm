@@ -144,6 +144,14 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "Counter",
         "importPath": "collections",
         "description": "collections",
@@ -760,6 +768,60 @@
         "description": "백준.실버.bfsdfs.11725",
         "peekOfCode": "maps = [0] * (N+1)\nfor i in range(1, N):\n    # a, b = map(int, lines[i].split())\n    a, b = map(int, input().split())\n    graph[a].append(b)\n    graph[b].append(a)\ndef bfs():\n    Q = deque([1])\n    while Q:\n        a = Q.popleft()",
         "detail": "백준.실버.bfsdfs.11725",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.bfsdfs.14940",
+        "description": "백준.실버.bfsdfs.14940",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\ndef bfs(y, x):\n    Q = deque()\n    Q.append((y, x))\n    visited[y][x] = True\n    arr[y][x] = 0\n    while Q:\n        a, b = Q.popleft()\n        for i in range(4):",
+        "detail": "백준.실버.bfsdfs.14940",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "백준.실버.bfsdfs.14940",
+        "description": "백준.실버.bfsdfs.14940",
+        "peekOfCode": "def bfs(y, x):\n    Q = deque()\n    Q.append((y, x))\n    visited[y][x] = True\n    arr[y][x] = 0\n    while Q:\n        a, b = Q.popleft()\n        for i in range(4):\n            ny = a + moveY[i]\n            nx = b + moveX[i]",
+        "detail": "백준.실버.bfsdfs.14940",
+        "documentation": {}
+    },
+    {
+        "label": "moveX",
+        "kind": 5,
+        "importPath": "백준.실버.bfsdfs.14940",
+        "description": "백준.실버.bfsdfs.14940",
+        "peekOfCode": "moveX = [1, 0, -1, 0]\nmoveY = [0, -1, 0, 1]\nn, m = map(int, input().split(\" \"))\narr = []\nvisited = [[False] * m for _ in range(n)]\nfor i in range(n):\n    arr.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(arr[y][x] == 2 and visited[y][x] == False):",
+        "detail": "백준.실버.bfsdfs.14940",
+        "documentation": {}
+    },
+    {
+        "label": "moveY",
+        "kind": 5,
+        "importPath": "백준.실버.bfsdfs.14940",
+        "description": "백준.실버.bfsdfs.14940",
+        "peekOfCode": "moveY = [0, -1, 0, 1]\nn, m = map(int, input().split(\" \"))\narr = []\nvisited = [[False] * m for _ in range(n)]\nfor i in range(n):\n    arr.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(arr[y][x] == 2 and visited[y][x] == False):\n            bfs(y, x)",
+        "detail": "백준.실버.bfsdfs.14940",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.bfsdfs.14940",
+        "description": "백준.실버.bfsdfs.14940",
+        "peekOfCode": "arr = []\nvisited = [[False] * m for _ in range(n)]\nfor i in range(n):\n    arr.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(arr[y][x] == 2 and visited[y][x] == False):\n            bfs(y, x)\nfor y in range(n):\n    for x in range(m):",
+        "detail": "백준.실버.bfsdfs.14940",
+        "documentation": {}
+    },
+    {
+        "label": "visited",
+        "kind": 5,
+        "importPath": "백준.실버.bfsdfs.14940",
+        "description": "백준.실버.bfsdfs.14940",
+        "peekOfCode": "visited = [[False] * m for _ in range(n)]\nfor i in range(n):\n    arr.append(list(map(int, input().split(\" \"))))\nfor y in range(n):\n    for x in range(m):\n        if(arr[y][x] == 2 and visited[y][x] == False):\n            bfs(y, x)\nfor y in range(n):\n    for x in range(m):\n        if(visited[y][x] == False and arr[y][x] != 0):",
+        "detail": "백준.실버.bfsdfs.14940",
         "documentation": {}
     },
     {
