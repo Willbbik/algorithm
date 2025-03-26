@@ -1266,6 +1266,15 @@
         "documentation": {}
     },
     {
+        "label": "solution",
+        "kind": 2,
+        "importPath": "백준.실버.bfsdfs.temp",
+        "description": "백준.실버.bfsdfs.temp",
+        "peekOfCode": "def solution(today, terms, privacies):\n    year, month, day = map(int, today.split(\".\"))\n    yearInt = (year - 2000) * 336\n    monthInt = month * 28\n    currentDayInt = yearInt + monthInt + day\n    hashmap = {}\n    result = []\n    for term in terms:\n        key, value = term.split(\" \")\n        hashmap[key] = int(value)",
+        "detail": "백준.실버.bfsdfs.temp",
+        "documentation": {}
+    },
+    {
         "label": "input",
         "kind": 2,
         "importPath": "백준.실버.bruteforce.1018",
