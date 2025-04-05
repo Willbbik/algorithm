@@ -1266,15 +1266,6 @@
         "documentation": {}
     },
     {
-        "label": "solution",
-        "kind": 2,
-        "importPath": "백준.실버.bfsdfs.temp",
-        "description": "백준.실버.bfsdfs.temp",
-        "peekOfCode": "def solution(today, terms, privacies):\n    year, month, day = map(int, today.split(\".\"))\n    yearInt = (year - 2000) * 336\n    monthInt = month * 28\n    currentDayInt = yearInt + monthInt + day\n    hashmap = {}\n    result = []\n    for term in terms:\n        key, value = term.split(\" \")\n        hashmap[key] = int(value)",
-        "detail": "백준.실버.bfsdfs.temp",
-        "documentation": {}
-    },
-    {
         "label": "input",
         "kind": 2,
         "importPath": "백준.실버.bruteforce.1018",
@@ -2019,6 +2010,15 @@
         "description": "백준.실버.implementation.2941",
         "peekOfCode": "tempStr = \"\"\nfor i in range(len(str)):\n    tempStr += str[i]\n    for target in arr:\n        if target in tempStr[lastIndex:]:\n            cnt += 1\n            lastIndex = i+1\n            strLength += len(target)\n            break\nprint(cnt + len(str) - strLength)",
         "detail": "백준.실버.implementation.2941",
+        "documentation": {}
+    },
+    {
+        "label": "solution",
+        "kind": 2,
+        "importPath": "프로그래머스.카카오.150370",
+        "description": "프로그래머스.카카오.150370",
+        "peekOfCode": "def solution(today, terms, privacies):\n    year, month, day = map(int, today.split(\".\"))\n    yearInt = (year - 2000) * 336\n    monthInt = month * 28\n    currentDayInt = yearInt + monthInt + day\n    hashmap = {}\n    result = []\n    for term in terms:\n        key, value = term.split(\" \")\n        hashmap[key] = int(value)",
+        "detail": "프로그래머스.카카오.150370",
         "documentation": {}
     }
 ]

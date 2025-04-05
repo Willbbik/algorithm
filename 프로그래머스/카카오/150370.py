@@ -1,3 +1,6 @@
+# level 1
+# 개인정보 수집 유효기간
+
 def solution(today, terms, privacies):
     
     year, month, day = map(int, today.split("."))
