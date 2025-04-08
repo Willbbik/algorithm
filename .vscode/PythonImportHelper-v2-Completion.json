@@ -2031,6 +2031,24 @@
         "documentation": {}
     },
     {
+        "label": "to_binary_number",
+        "kind": 2,
+        "importPath": "프로그래머스.카카오.17681",
+        "description": "프로그래머스.카카오.17681",
+        "peekOfCode": "def to_binary_number(number):\n    binaryStr = str(bin(number))    \n    return binaryStr.replace(\"0b\", \"\").zfill(5)\ndef solution(n, arr1, arr2):\n    maps = [[\"\"] * n for __ in range(n)]\n    for num in arr1:\n        to_binary_number(num)",
+        "detail": "프로그래머스.카카오.17681",
+        "documentation": {}
+    },
+    {
+        "label": "solution",
+        "kind": 2,
+        "importPath": "프로그래머스.카카오.17681",
+        "description": "프로그래머스.카카오.17681",
+        "peekOfCode": "def solution(n, arr1, arr2):\n    maps = [[\"\"] * n for __ in range(n)]\n    for num in arr1:\n        to_binary_number(num)",
+        "detail": "프로그래머스.카카오.17681",
+        "documentation": {}
+    },
+    {
         "label": "solution",
         "kind": 2,
         "importPath": "프로그래머스.카카오.81301",
