@@ -2035,7 +2035,7 @@
         "kind": 2,
         "importPath": "프로그래머스.카카오.17681",
         "description": "프로그래머스.카카오.17681",
-        "peekOfCode": "def to_binary_number(number):\n    binaryStr = str(bin(number))    \n    return binaryStr.replace(\"0b\", \"\").zfill(5)\ndef solution(n, arr1, arr2):\n    maps = [[\"\"] * n for __ in range(n)]\n    for num in arr1:\n        to_binary_number(num)",
+        "peekOfCode": "def to_binary_number(number, n):    \n    return bin(number)[2:].zfill(n)\ndef solution(n, arr1, arr2):\n    maps1 = [to_binary_number(num, n) for num in arr1]\n    maps2 = [to_binary_number(num, n) for num in arr2]\n    result = []\n    for row1, row2 in zip(maps1, maps2):\n        line = ''\n        for a, b in zip(row1, row2):\n            line += '#' if a == '1' or b == '1' else ' '",
         "detail": "프로그래머스.카카오.17681",
         "documentation": {}
     },
@@ -2044,7 +2044,7 @@
         "kind": 2,
         "importPath": "프로그래머스.카카오.17681",
         "description": "프로그래머스.카카오.17681",
-        "peekOfCode": "def solution(n, arr1, arr2):\n    maps = [[\"\"] * n for __ in range(n)]\n    for num in arr1:\n        to_binary_number(num)",
+        "peekOfCode": "def solution(n, arr1, arr2):\n    maps1 = [to_binary_number(num, n) for num in arr1]\n    maps2 = [to_binary_number(num, n) for num in arr2]\n    result = []\n    for row1, row2 in zip(maps1, maps2):\n        line = ''\n        for a, b in zip(row1, row2):\n            line += '#' if a == '1' or b == '1' else ' '\n        result.append(line)\n    return result",
         "detail": "프로그래머스.카카오.17681",
         "documentation": {}
     },
