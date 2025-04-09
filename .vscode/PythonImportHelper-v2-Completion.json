@@ -2031,6 +2031,15 @@
         "documentation": {}
     },
     {
+        "label": "solution",
+        "kind": 2,
+        "importPath": "프로그래머스.카카오.17680",
+        "description": "프로그래머스.카카오.17680",
+        "peekOfCode": "def solution(cacheSize, cities):\n    arr = []\n    cnt = 0\n    for city in cities:\n        city = city.lower()\n        if city in arr:\n            arr.remove(city)\n            arr.insert(0, city)\n            cnt += 1\n        else:",
+        "detail": "프로그래머스.카카오.17680",
+        "documentation": {}
+    },
+    {
         "label": "to_binary_number",
         "kind": 2,
         "importPath": "프로그래머스.카카오.17681",

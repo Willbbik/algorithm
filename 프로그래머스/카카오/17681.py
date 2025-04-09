@@ -1,5 +1,6 @@
+## [1차] 비밀지도
 
-# 10진수 > 2진수 변환 (5자리 채워서)
+# 10진수 > 2진수 변환
 def to_binary_number(number, n):    
     return bin(number)[2:].zfill(n)
 
