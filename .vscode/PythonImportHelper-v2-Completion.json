@@ -645,6 +645,24 @@
         "documentation": {}
     },
     {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.브론즈.10817",
+        "description": "백준.브론즈.10817",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nA, B, C = map(int, input().split(\" \"))\narr = []\narr.append(A)\narr.append(B)\narr.append(C)\narr.sort()\nprint(arr[1])",
+        "detail": "백준.브론즈.10817",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.브론즈.10817",
+        "description": "백준.브론즈.10817",
+        "peekOfCode": "arr = []\narr.append(A)\narr.append(B)\narr.append(C)\narr.sort()\nprint(arr[1])",
+        "detail": "백준.브론즈.10817",
+        "documentation": {}
+    },
+    {
         "label": "bfs",
         "kind": 2,
         "importPath": "백준.실버.bfsdfs.1012",
