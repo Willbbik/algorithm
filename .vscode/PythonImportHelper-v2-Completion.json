@@ -2078,6 +2078,51 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "N = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "arr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "M",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "M = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "findArr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "findArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.순열.10972",
         "description": "백준.실버.순열.10972",
         "peekOfCode": "def input():\n    return sys.stdin.readline()\nn = int(input())\narr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])",
