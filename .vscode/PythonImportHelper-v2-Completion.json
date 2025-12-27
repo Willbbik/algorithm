@@ -2022,6 +2022,42 @@
         "documentation": {}
     },
     {
+        "label": "custom_stack",
+        "kind": 6,
+        "importPath": "백준.실버.stack.10828",
+        "description": "백준.실버.stack.10828",
+        "peekOfCode": "class custom_stack:    \n    def __init__(self):\n        self.arr = []\n    def push(self, num):\n        self.arr.append(num)\n    def pop(self):\n        if not self.arr:\n            print(-1)\n        else:\n            print(self.arr.pop())",
+        "detail": "백준.실버.stack.10828",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.stack.10828",
+        "description": "백준.실버.stack.10828",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nclass custom_stack:    \n    def __init__(self):\n        self.arr = []\n    def push(self, num):\n        self.arr.append(num)\n    def pop(self):\n        if not self.arr:\n            print(-1)",
+        "detail": "백준.실버.stack.10828",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "백준.실버.stack.10828",
+        "description": "백준.실버.stack.10828",
+        "peekOfCode": "n = int(input())\nstack = custom_stack()\nfor i in range(0, n, 1):\n    command = input().split(\" \")\n    match command[0]:\n        case 'push':\n            stack.push(int(command[1]))\n        case 'pop':\n            stack.pop()\n        case 'size':",
+        "detail": "백준.실버.stack.10828",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "백준.실버.stack.10828",
+        "description": "백준.실버.stack.10828",
+        "peekOfCode": "stack = custom_stack()\nfor i in range(0, n, 1):\n    command = input().split(\" \")\n    match command[0]:\n        case 'push':\n            stack.push(int(command[1]))\n        case 'pop':\n            stack.pop()\n        case 'size':\n            stack.size()",
+        "detail": "백준.실버.stack.10828",
+        "documentation": {}
+    },
+    {
         "label": "input",
         "kind": 2,
         "importPath": "백준.실버.stack.9012",
