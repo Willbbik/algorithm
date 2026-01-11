@@ -1,8 +1,2 @@
-7
-pop
-top
-push 123
-top
-pop
-top
-pop
+5
+5 4 3 2 1

@@ -645,6 +645,24 @@
         "documentation": {}
     },
     {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.브론즈.10817",
+        "description": "백준.브론즈.10817",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nA, B, C = map(int, input().split(\" \"))\narr = []\narr.append(A)\narr.append(B)\narr.append(C)\narr.sort()\nprint(arr[1])",
+        "detail": "백준.브론즈.10817",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.브론즈.10817",
+        "description": "백준.브론즈.10817",
+        "peekOfCode": "arr = []\narr.append(A)\narr.append(B)\narr.append(C)\narr.sort()\nprint(arr[1])",
+        "detail": "백준.브론즈.10817",
+        "documentation": {}
+    },
+    {
         "label": "bfs",
         "kind": 2,
         "importPath": "백준.실버.bfsdfs.1012",
@@ -2100,6 +2118,114 @@
         "description": "백준.실버.순열.10972",
         "peekOfCode": "arr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])\n                print(*arr)\n                exit()\nprint(-1)",
         "detail": "백준.실버.순열.10972",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\narr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "N = int(input())\narr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "arr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "newArr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "newArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "N = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "arr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "M",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "M = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "findArr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "findArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.순열.10972",
+        "description": "백준.실버.순열.10972",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nn = int(input())\narr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])",
+        "detail": "백준.실버.순열.10972",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "백준.실버.순열.10972",
+        "description": "백준.실버.순열.10972",
+        "peekOfCode": "n = int(input())\narr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])\n                print(*arr)\n                exit()",
+        "detail": "백준.실버.순열.10972",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.순열.10972",
+        "description": "백준.실버.순열.10972",
+        "peekOfCode": "arr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])\n                print(*arr)\n                exit()\nprint(-1)",
+        "detail": "백준.실버.순열.10972",
         "documentation": {}
     },
     {
