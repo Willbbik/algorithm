@@ -647,19 +647,19 @@
     {
         "label": "input",
         "kind": 2,
-        "importPath": "백준.브론즈.10817",
-        "description": "백준.브론즈.10817",
+        "importPath": "백준.브론즈.10817",
+        "description": "백준.브론즈.10817",
         "peekOfCode": "def input():\n    return sys.stdin.readline()\nA, B, C = map(int, input().split(\" \"))\narr = []\narr.append(A)\narr.append(B)\narr.append(C)\narr.sort()\nprint(arr[1])",
-        "detail": "백준.브론즈.10817",
+        "detail": "백준.브론즈.10817",
         "documentation": {}
     },
     {
         "label": "arr",
         "kind": 5,
-        "importPath": "백준.브론즈.10817",
-        "description": "백준.브론즈.10817",
+        "importPath": "백준.브론즈.10817",
+        "description": "백준.브론즈.10817",
         "peekOfCode": "arr = []\narr.append(A)\narr.append(B)\narr.append(C)\narr.sort()\nprint(arr[1])",
-        "detail": "백준.브론즈.10817",
+        "detail": "백준.브론즈.10817",
         "documentation": {}
     },
     {
@@ -2040,6 +2040,87 @@
         "documentation": {}
     },
     {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\narr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "N = int(input())\narr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "arr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "newArr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1181",
+        "description": "백준.실버.sort.1181",
+        "peekOfCode": "newArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
+        "detail": "백준.실버.sort.1181",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "N = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "arr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "M",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "M = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
+        "label": "findArr",
+        "kind": 5,
+        "importPath": "백준.실버.sort.1920",
+        "description": "백준.실버.sort.1920",
+        "peekOfCode": "findArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
+        "detail": "백준.실버.sort.1920",
+        "documentation": {}
+    },
+    {
         "label": "custom_stack",
         "kind": 6,
         "importPath": "백준.실버.stack.10828",
@@ -2073,6 +2154,141 @@
         "description": "백준.실버.stack.10828",
         "peekOfCode": "stack = custom_stack()\nfor i in range(0, n, 1):\n    command = input().split(\" \")\n    match command[0]:\n        case 'push':\n            stack.push(int(command[1]))\n        case 'pop':\n            stack.pop()\n        case 'size':\n            stack.size()",
         "detail": "백준.실버.stack.10828",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.stack.1406",
+        "description": "백준.실버.stack.1406",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nleft = list(input())\nright = []\nn = int(input())\nfor i in range(n):\n    arr = list(input().split())\n    if arr[0] == 'L' and left:\n        right.append(left.pop())\n    elif arr[0] == 'D':",
+        "detail": "백준.실버.stack.1406",
+        "documentation": {}
+    },
+    {
+        "label": "left",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1406",
+        "description": "백준.실버.stack.1406",
+        "peekOfCode": "left = list(input())\nright = []\nn = int(input())\nfor i in range(n):\n    arr = list(input().split())\n    if arr[0] == 'L' and left:\n        right.append(left.pop())\n    elif arr[0] == 'D':\n        if right:\n            left.append(right.pop())",
+        "detail": "백준.실버.stack.1406",
+        "documentation": {}
+    },
+    {
+        "label": "right",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1406",
+        "description": "백준.실버.stack.1406",
+        "peekOfCode": "right = []\nn = int(input())\nfor i in range(n):\n    arr = list(input().split())\n    if arr[0] == 'L' and left:\n        right.append(left.pop())\n    elif arr[0] == 'D':\n        if right:\n            left.append(right.pop())\n    elif arr[0] == 'B' and left:",
+        "detail": "백준.실버.stack.1406",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1406",
+        "description": "백준.실버.stack.1406",
+        "peekOfCode": "n = int(input())\nfor i in range(n):\n    arr = list(input().split())\n    if arr[0] == 'L' and left:\n        right.append(left.pop())\n    elif arr[0] == 'D':\n        if right:\n            left.append(right.pop())\n    elif arr[0] == 'B' and left:\n        left.pop()",
+        "detail": "백준.실버.stack.1406",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.stack.1874",
+        "description": "백준.실버.stack.1874",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nn = int(input())\ntarget = [int(input()) for _ in range(n)]\nstack = []\nresult = []\ncur = 1\nfor next in target: \n    while cur <= next:\n        stack.append(cur)",
+        "detail": "백준.실버.stack.1874",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1874",
+        "description": "백준.실버.stack.1874",
+        "peekOfCode": "n = int(input())\ntarget = [int(input()) for _ in range(n)]\nstack = []\nresult = []\ncur = 1\nfor next in target: \n    while cur <= next:\n        stack.append(cur)\n        result.append(\"+\")\n        cur += 1",
+        "detail": "백준.실버.stack.1874",
+        "documentation": {}
+    },
+    {
+        "label": "target",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1874",
+        "description": "백준.실버.stack.1874",
+        "peekOfCode": "target = [int(input()) for _ in range(n)]\nstack = []\nresult = []\ncur = 1\nfor next in target: \n    while cur <= next:\n        stack.append(cur)\n        result.append(\"+\")\n        cur += 1\n    if stack and stack[-1] == next:",
+        "detail": "백준.실버.stack.1874",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1874",
+        "description": "백준.실버.stack.1874",
+        "peekOfCode": "stack = []\nresult = []\ncur = 1\nfor next in target: \n    while cur <= next:\n        stack.append(cur)\n        result.append(\"+\")\n        cur += 1\n    if stack and stack[-1] == next:\n        stack.pop()",
+        "detail": "백준.실버.stack.1874",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1874",
+        "description": "백준.실버.stack.1874",
+        "peekOfCode": "result = []\ncur = 1\nfor next in target: \n    while cur <= next:\n        stack.append(cur)\n        result.append(\"+\")\n        cur += 1\n    if stack and stack[-1] == next:\n        stack.pop()\n        result.append(\"-\")",
+        "detail": "백준.실버.stack.1874",
+        "documentation": {}
+    },
+    {
+        "label": "cur",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1874",
+        "description": "백준.실버.stack.1874",
+        "peekOfCode": "cur = 1\nfor next in target: \n    while cur <= next:\n        stack.append(cur)\n        result.append(\"+\")\n        cur += 1\n    if stack and stack[-1] == next:\n        stack.pop()\n        result.append(\"-\")\n    else:",
+        "detail": "백준.실버.stack.1874",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.stack.28278",
+        "description": "백준.실버.stack.28278",
+        "peekOfCode": "def input():\n    return sys.stdin.readline()\nn = int(input())\nstack = []\nfor i in range(n):\n    arr = list(map(int, input().split()))\n    command = arr[0]\n    if command == 1:\n        stack.append(arr[1])\n    elif command == 2:",
+        "detail": "백준.실버.stack.28278",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "백준.실버.stack.28278",
+        "description": "백준.실버.stack.28278",
+        "peekOfCode": "n = int(input())\nstack = []\nfor i in range(n):\n    arr = list(map(int, input().split()))\n    command = arr[0]\n    if command == 1:\n        stack.append(arr[1])\n    elif command == 2:\n        if stack:\n            print(stack.pop())",
+        "detail": "백준.실버.stack.28278",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "백준.실버.stack.28278",
+        "description": "백준.실버.stack.28278",
+        "peekOfCode": "stack = []\nfor i in range(n):\n    arr = list(map(int, input().split()))\n    command = arr[0]\n    if command == 1:\n        stack.append(arr[1])\n    elif command == 2:\n        if stack:\n            print(stack.pop())\n        else:",
+        "detail": "백준.실버.stack.28278",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.stack.5397",
+        "description": "백준.실버.stack.5397",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nn = int(input())\nfor i in range(n):\n    text = list(input())\n    left = []\n    right = []\n    for a in text:\n        if a == '<':\n            if left:",
+        "detail": "백준.실버.stack.5397",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "백준.실버.stack.5397",
+        "description": "백준.실버.stack.5397",
+        "peekOfCode": "n = int(input())\nfor i in range(n):\n    text = list(input())\n    left = []\n    right = []\n    for a in text:\n        if a == '<':\n            if left:\n                right.append(left.pop())\n        elif a == '>':",
+        "detail": "백준.실버.stack.5397",
         "documentation": {}
     },
     {
@@ -2118,114 +2334,6 @@
         "description": "백준.실버.순열.10972",
         "peekOfCode": "arr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])\n                print(*arr)\n                exit()\nprint(-1)",
         "detail": "백준.실버.순열.10972",
-        "documentation": {}
-    },
-    {
-        "label": "input",
-        "kind": 2,
-        "importPath": "백준.실버.sort.1181",
-        "description": "백준.실버.sort.1181",
-        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\narr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
-        "detail": "백준.실버.sort.1181",
-        "documentation": {}
-    },
-    {
-        "label": "N",
-        "kind": 5,
-        "importPath": "백준.실버.sort.1181",
-        "description": "백준.실버.sort.1181",
-        "peekOfCode": "N = int(input())\narr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
-        "detail": "백준.실버.sort.1181",
-        "documentation": {}
-    },
-    {
-        "label": "arr",
-        "kind": 5,
-        "importPath": "백준.실버.sort.1181",
-        "description": "백준.실버.sort.1181",
-        "peekOfCode": "arr = []\nfor i in range(N):\n    arr.append(input())\nnewArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
-        "detail": "백준.실버.sort.1181",
-        "documentation": {}
-    },
-    {
-        "label": "newArr",
-        "kind": 5,
-        "importPath": "백준.실버.sort.1181",
-        "description": "백준.실버.sort.1181",
-        "peekOfCode": "newArr = sorted(list(set(arr)), key=lambda x: (len(x), x))\nfor word in newArr:\n    print(word)",
-        "detail": "백준.실버.sort.1181",
-        "documentation": {}
-    },
-    {
-        "label": "input",
-        "kind": 2,
-        "importPath": "백준.실버.sort.1920",
-        "description": "백준.실버.sort.1920",
-        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nN = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:",
-        "detail": "백준.실버.sort.1920",
-        "documentation": {}
-    },
-    {
-        "label": "N",
-        "kind": 5,
-        "importPath": "백준.실버.sort.1920",
-        "description": "백준.실버.sort.1920",
-        "peekOfCode": "N = int(input())\narr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
-        "detail": "백준.실버.sort.1920",
-        "documentation": {}
-    },
-    {
-        "label": "arr",
-        "kind": 5,
-        "importPath": "백준.실버.sort.1920",
-        "description": "백준.실버.sort.1920",
-        "peekOfCode": "arr = set(map(int, input().split(\" \")))\nM = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
-        "detail": "백준.실버.sort.1920",
-        "documentation": {}
-    },
-    {
-        "label": "M",
-        "kind": 5,
-        "importPath": "백준.실버.sort.1920",
-        "description": "백준.실버.sort.1920",
-        "peekOfCode": "M = int(input())\nfindArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
-        "detail": "백준.실버.sort.1920",
-        "documentation": {}
-    },
-    {
-        "label": "findArr",
-        "kind": 5,
-        "importPath": "백준.실버.sort.1920",
-        "description": "백준.실버.sort.1920",
-        "peekOfCode": "findArr = list(map(int, input().split(\" \")))\nfor index in findArr:\n    if index in arr:\n        print(1)\n    else:\n        print(0)",
-        "detail": "백준.실버.sort.1920",
-        "documentation": {}
-    },
-    {
-        "label": "input",
-        "kind": 2,
-        "importPath": "백준.실버.순열.10972",
-        "description": "백준.실버.순열.10972",
-        "peekOfCode": "def input():\n    return sys.stdin.readline()\nn = int(input())\narr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])",
-        "detail": "백준.실버.순열.10972",
-        "documentation": {}
-    },
-    {
-        "label": "n",
-        "kind": 5,
-        "importPath": "백준.실버.순열.10972",
-        "description": "백준.실버.순열.10972",
-        "peekOfCode": "n = int(input())\narr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])\n                print(*arr)\n                exit()",
-        "detail": "백준.실버.순열.10972",
-        "documentation": {}
-    },
-    {
-        "label": "arr",
-        "kind": 5,
-        "importPath": "백준.실버.순열.10972",
-        "description": "백준.실버.순열.10972",
-        "peekOfCode": "arr = list(map(int, input().split(\" \")))\nfor i in range(n-1, 0, -1):\n    if(arr[i-1] < arr[i]):\n        for k in range(n-1, 0, -1):\n            if(arr[i-1] < arr[k]):\n                arr[i-1], arr[k] = arr[k], arr[i-1]\n                arr = arr[:i] + sorted(arr[i:])\n                print(*arr)\n                exit()\nprint(-1)",
-        "detail": "백준.실버.순열.10972",
         "documentation": {}
     },
     {
