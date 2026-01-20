@@ -195,6 +195,15 @@
         "documentation": {}
     },
     {
+        "label": "operator",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "operator",
+        "description": "operator",
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -2159,6 +2168,33 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.stack.11899",
+        "description": "백준.실버.stack.11899",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\ntext = input()\nstack = []\nfor i in text:\n    if i == '(':\n        stack.append(i)\n    else:\n        if stack and stack[-1] == '(':\n            stack.pop()",
+        "detail": "백준.실버.stack.11899",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "백준.실버.stack.11899",
+        "description": "백준.실버.stack.11899",
+        "peekOfCode": "text = input()\nstack = []\nfor i in text:\n    if i == '(':\n        stack.append(i)\n    else:\n        if stack and stack[-1] == '(':\n            stack.pop()\n        else:\n            stack.append(i)",
+        "detail": "백준.실버.stack.11899",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "백준.실버.stack.11899",
+        "description": "백준.실버.stack.11899",
+        "peekOfCode": "stack = []\nfor i in text:\n    if i == '(':\n        stack.append(i)\n    else:\n        if stack and stack[-1] == '(':\n            stack.pop()\n        else:\n            stack.append(i)\nprint(len(stack))",
+        "detail": "백준.실버.stack.11899",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.stack.1406",
         "description": "백준.실버.stack.1406",
         "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nleft = list(input())\nright = []\nn = int(input())\nfor i in range(n):\n    arr = list(input().split())\n    if arr[0] == 'L' and left:\n        right.append(left.pop())\n    elif arr[0] == 'D':",
@@ -2249,6 +2285,60 @@
     {
         "label": "input",
         "kind": 2,
+        "importPath": "백준.실버.stack.1935",
+        "description": "백준.실버.stack.1935",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nn = int(input())\ntext = list(input())\nstack = []\nnums = []\nops = {\n    '+': operator.add,\n    '-': operator.sub,\n    '*': operator.mul,",
+        "detail": "백준.실버.stack.1935",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1935",
+        "description": "백준.실버.stack.1935",
+        "peekOfCode": "n = int(input())\ntext = list(input())\nstack = []\nnums = []\nops = {\n    '+': operator.add,\n    '-': operator.sub,\n    '*': operator.mul,\n    '/': operator.truediv\n}",
+        "detail": "백준.실버.stack.1935",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1935",
+        "description": "백준.실버.stack.1935",
+        "peekOfCode": "text = list(input())\nstack = []\nnums = []\nops = {\n    '+': operator.add,\n    '-': operator.sub,\n    '*': operator.mul,\n    '/': operator.truediv\n}\nfor i in range(n):",
+        "detail": "백준.실버.stack.1935",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1935",
+        "description": "백준.실버.stack.1935",
+        "peekOfCode": "stack = []\nnums = []\nops = {\n    '+': operator.add,\n    '-': operator.sub,\n    '*': operator.mul,\n    '/': operator.truediv\n}\nfor i in range(n):\n    nums.append(int(input()))",
+        "detail": "백준.실버.stack.1935",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1935",
+        "description": "백준.실버.stack.1935",
+        "peekOfCode": "nums = []\nops = {\n    '+': operator.add,\n    '-': operator.sub,\n    '*': operator.mul,\n    '/': operator.truediv\n}\nfor i in range(n):\n    nums.append(int(input()))\nfor i in text:",
+        "detail": "백준.실버.stack.1935",
+        "documentation": {}
+    },
+    {
+        "label": "ops",
+        "kind": 5,
+        "importPath": "백준.실버.stack.1935",
+        "description": "백준.실버.stack.1935",
+        "peekOfCode": "ops = {\n    '+': operator.add,\n    '-': operator.sub,\n    '*': operator.mul,\n    '/': operator.truediv\n}\nfor i in range(n):\n    nums.append(int(input()))\nfor i in text:\n    if i.isalpha():",
+        "detail": "백준.실버.stack.1935",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
         "importPath": "백준.실버.stack.28278",
         "description": "백준.실버.stack.28278",
         "peekOfCode": "def input():\n    return sys.stdin.readline()\nn = int(input())\nstack = []\nfor i in range(n):\n    arr = list(map(int, input().split()))\n    command = arr[0]\n    if command == 1:\n        stack.append(arr[1])\n    elif command == 2:",
@@ -2271,6 +2361,60 @@
         "description": "백준.실버.stack.28278",
         "peekOfCode": "stack = []\nfor i in range(n):\n    arr = list(map(int, input().split()))\n    command = arr[0]\n    if command == 1:\n        stack.append(arr[1])\n    elif command == 2:\n        if stack:\n            print(stack.pop())\n        else:",
         "detail": "백준.실버.stack.28278",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.stack.2841",
+        "description": "백준.실버.stack.2841",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\narr = list(map(int, input().split()))\nstack = [[] for _ in range(7)]\ncount = 0\nfor i in range(arr[0]):\n    temp = list(map(int, input().split()))\n    K = temp[0]\n    P = temp[1]\n    if not stack[K] or stack[K][-1] < P:",
+        "detail": "백준.실버.stack.2841",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "백준.실버.stack.2841",
+        "description": "백준.실버.stack.2841",
+        "peekOfCode": "arr = list(map(int, input().split()))\nstack = [[] for _ in range(7)]\ncount = 0\nfor i in range(arr[0]):\n    temp = list(map(int, input().split()))\n    K = temp[0]\n    P = temp[1]\n    if not stack[K] or stack[K][-1] < P:\n        stack[K].append(P)\n        count += 1",
+        "detail": "백준.실버.stack.2841",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "백준.실버.stack.2841",
+        "description": "백준.실버.stack.2841",
+        "peekOfCode": "stack = [[] for _ in range(7)]\ncount = 0\nfor i in range(arr[0]):\n    temp = list(map(int, input().split()))\n    K = temp[0]\n    P = temp[1]\n    if not stack[K] or stack[K][-1] < P:\n        stack[K].append(P)\n        count += 1\n    else:",
+        "detail": "백준.실버.stack.2841",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "백준.실버.stack.2841",
+        "description": "백준.실버.stack.2841",
+        "peekOfCode": "count = 0\nfor i in range(arr[0]):\n    temp = list(map(int, input().split()))\n    K = temp[0]\n    P = temp[1]\n    if not stack[K] or stack[K][-1] < P:\n        stack[K].append(P)\n        count += 1\n    else:\n        while True:",
+        "detail": "백준.실버.stack.2841",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "백준.실버.stack.4889",
+        "description": "백준.실버.stack.4889",
+        "peekOfCode": "def input():\n    return sys.stdin.readline().strip()\nidx = 1\nwhile True:\n    text = input()\n    if text.startswith(\"-\"):\n        break\n    arr = list(text)\n    stack = []\n    for i in arr:",
+        "detail": "백준.실버.stack.4889",
+        "documentation": {}
+    },
+    {
+        "label": "idx",
+        "kind": 5,
+        "importPath": "백준.실버.stack.4889",
+        "description": "백준.실버.stack.4889",
+        "peekOfCode": "idx = 1\nwhile True:\n    text = input()\n    if text.startswith(\"-\"):\n        break\n    arr = list(text)\n    stack = []\n    for i in arr:\n        if i == '{':\n            stack.append(i)",
+        "detail": "백준.실버.stack.4889",
         "documentation": {}
     },
     {
