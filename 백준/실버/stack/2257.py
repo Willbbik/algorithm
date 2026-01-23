@@ -8,13 +8,13 @@ stack = []
 
 for i in formula:
     if i == '(':
-        stack.append(-1)
+        stack.append(i)
     elif i == ')':
         temp = 0
 
         while stack:
             a = stack.pop()
-            if a == -1:
+            if a == '(':
                 break
             else:
                 temp += a
@@ -27,7 +27,6 @@ for i in formula:
     elif i == 'O':
         stack.append(16)
     else:
-        if stack:
-            stack.append(stack.pop() * int(i))
+        stack.append(stack.pop() * int(i))
 
 print(sum(stack))
